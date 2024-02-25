@@ -1,0 +1,28 @@
+.form__container {
+  width: 80%;
+}
+
+.verification__container {
+  text-align: center;
+  width: fit-content;
+  margin: 8rem auto;
+}
+
+.verification__container > p {
+  margin-block: 1.5rem;
+  width: 400px;
+}
+
+.complete__btn {
+  background-color: #1e39a6ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding-block: 10px;
+  width: 250px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.complete__btn:hover {
+  transform: scale(1.05);
+}
