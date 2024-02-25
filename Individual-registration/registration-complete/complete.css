@@ -8,9 +8,14 @@
   margin: 8rem auto;
 }
 
+.verification__container > h3 {
+  margin-top: 1rem;
+}
 .verification__container > p {
-  margin-block: 1.5rem;
-  width: 400px;
+  margin-bottom: 1rem;
+  line-height: 0.7cm;
+  font-size: 18px;
+  width: 450px;
 }
 
 .complete__btn {
@@ -25,4 +30,10 @@
 }
 .complete__btn:hover {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 550px) {
+  .verification__container > p {
+    width: 100%;
+  }
 }
