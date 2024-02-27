@@ -2,8 +2,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../individual.css" />
-    <link rel="stylesheet" href="../sidebar.css" />
+    <link rel="stylesheet" href="../company.css" />
+    <link rel="stylesheet" href="../company-sidebar.css" />
     <link rel="stylesheet" href="./preview.css" />
     <title>Basic Information(Previe)</title>
   </head>
@@ -19,22 +19,15 @@
           <li>
             <span class="aside__checked"></span
             ><a href=""
-              ><h4>Category</h4>
-              <span>Please select your category</span></a
+              ><h4>Company Information</h4>
+              <span>Please enter company details</span></a
             >
           </li>
           <li>
             <span class="aside__checked"></span
             ><a href=""
-              ><h4>Basic Information</h4>
-              <span>Please enter taxpayer details</span></a
-            >
-          </li>
-          <li>
-            <span class="aside__checked"></span
-            ><a href=""
-              ><h4>Business Information</h4>
-              <span>Please enter Business information</span></a
+              ><h4>Company Representative</h4>
+              <span>Please enter company rep. details</span></a
             >
           </li>
           <li>
@@ -63,45 +56,44 @@
         </div>
 
         <form class="form">
-          <h3 class="preview__heading">Basic Information</h3>
+          <h3 class="preview__heading">Company Information</h3>
 
           <!-- ========================= -->
-          <!-- Basic Information section -->
+          <!-- Company Information section -->
           <div class="fields__container">
             <div>
-              <label for="">Tax Category</label><br /><input
+              <label for="">Tax Category*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Name of Organization**</label><br /><input
                 type="text"
-                placeholder="Presumptive Tax"
+                placeholder="Enter organization name here*"
                 class="input__box"
               />
             </div>
             <div>
-              <label for="">First name</label><br /><input
-                type="text"
-                placeholder="Enter first name here"
-                class="input__box"
-              />
+              <label for="">Industry*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
             </div>
             <div>
-              <label for="">Surname</label><br /><input
-                type="text"
-                placeholder="Enter surname here"
-                class="input__box"
-              />
-            </div>
-            <div>
-              <label for="">Email</label><br /><input
-                type="text"
-                placeholder="Enter email address"
-                class="input__box"
-              />
-            </div>
-            <div>
-              <label for="">Phone number</label><br /><input
-                type="text"
-                placeholder="Enter phone number here"
-                class="input__box"
-              />
+              <label for="">No of staff*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
             </div>
             <div>
               <label for="">TIN (Optional)</label><br /><input
@@ -111,7 +103,82 @@
               />
             </div>
             <div>
-              <label for="">ID Type</label><br /><select
+              <label for="">Email*</label><br /><input
+                type="text"
+                placeholder="Enter email address"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">LGA*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">State*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Akwa Ibom</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Area*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Address*</label><br /><input
+                type="text"
+                placeholder="Enter address here"
+                class="input__box"
+              />
+            </div>
+          </div>
+
+          <!-- ============================ -->
+          <!-- Company Representative section -->
+          <h3 class="biz__info">Company Representative</h3>
+          <div class="fields__container">
+            <div>
+              <label for="">First name*</label><br /><input
+                type="text"
+                placeholder="Enter first name here"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Surname*</label><br /><input
+                type="text"
+                placeholder="Enter surname here"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Email*</label><br /><input
+                type="text"
+                placeholder="Enter email address"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Phone number*</label><br /><input
+                type="text"
+                placeholder="Enter phone number here"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">ID Type*</label><br /><select
                 name=""
                 id=""
                 class="select__box"
@@ -127,7 +194,7 @@
               />
             </div>
             <div>
-              <label for="">Employment Status</label><br /><select
+              <label for="">Position*</label><br /><select
                 name=""
                 id=""
                 class="select__box"
@@ -135,26 +202,8 @@
                 <option value="">Select---</option>
               </select>
             </div>
-            <div class="radio__container">
-              <label for="">Are you a business owner?</label>
-              <div>
-                <input type="radio" />
-                <label for="">Yes</label>
-              </div>
-              <div>
-                <input type="radio" />
-                <label for="">No</label>
-              </div>
-            </div>
             <div>
-              <label for="">Name of Business</label><br /><input
-                type="text"
-                placeholder="Name of the Business"
-                class="input__box"
-              />
-            </div>
-            <div>
-              <label for="">State</label><br /><select
+              <label for="">State*</label><br /><select
                 name=""
                 id=""
                 class="select__box"
@@ -163,7 +212,7 @@
               </select>
             </div>
             <div>
-              <label for="">LGA</label><br /><select
+              <label for="">LGA*</label><br /><select
                 name=""
                 id=""
                 class="select__box"
@@ -172,53 +221,9 @@
               </select>
             </div>
             <div>
-              <label for="">Area</label><br /><select
-                name=""
-                id=""
-                class="select__box"
-              >
-                <option value="">Select---</option>
-              </select>
-            </div>
-            <div>
-              <label for="">Address</label><br /><input
+              <label for="">Address*</label><br /><input
                 type="text"
                 placeholder="Enter address here"
-                class="input__box"
-              />
-            </div>
-          </div>
-
-          <!-- ============================ -->
-          <!-- Business Information section -->
-          <h3 class="biz__info">Business Information</h3>
-          <div class="fields__container">
-            <div>
-              <label for="">Type of Business </label><br /><input
-                type="text"
-                placeholder="Enter type of business"
-                class="input__box"
-              />
-            </div>
-            <div>
-              <label for="">No of Employees</label><br /><input
-                type="text"
-                placeholder="Enter number of employee"
-                class="input__box"
-              />
-            </div>
-            <div>
-              <label for="">Annual Revenue return In naira</label><br /><input
-                type="text"
-                placeholder="Enter revenue"
-                class="input__box"
-              />
-            </div>
-            <div>
-              <label for="">Value of business/assets In naira</label
-              ><br /><input
-                type="text"
-                placeholder="Enter value of business"
                 class="input__box"
               />
             </div>
@@ -243,7 +248,7 @@
               />
             </div>
           </div>
-          <button class="preview__btn">Continue</button>
+          <button class="preview__btn">Verify</button>
         </form>
       </section>
     </main>
