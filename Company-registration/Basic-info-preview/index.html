@@ -1,0 +1,251 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../individual.css" />
+    <link rel="stylesheet" href="../sidebar.css" />
+    <link rel="stylesheet" href="./preview.css" />
+    <title>Basic Information(Previe)</title>
+  </head>
+  <body>
+    <main class="basic__main__page">
+      <aside class="sidebar">
+        <!-- Logo -->
+        <a href="">
+          <img src="../../logo/Logo.png" alt="Logo" />
+        </a>
+        <!-- Aside items -->
+        <ul class="sidebar__unordered">
+          <li>
+            <span class="aside__checked"></span
+            ><a href=""
+              ><h4>Category</h4>
+              <span>Please select your category</span></a
+            >
+          </li>
+          <li>
+            <span class="aside__checked"></span
+            ><a href=""
+              ><h4>Basic Information</h4>
+              <span>Please enter taxpayer details</span></a
+            >
+          </li>
+          <li>
+            <span class="aside__checked"></span
+            ><a href=""
+              ><h4>Business Information</h4>
+              <span>Please enter Business information</span></a
+            >
+          </li>
+          <li>
+            <span class="aside__checked"></span
+            ><a href=""
+              ><h4>Preview</h4>
+              <span>Preview and print information</span></a
+            >
+          </li>
+          <li>
+            <span class="aside__checked"></span
+            ><a href=""
+              ><h4>Verification</h4>
+              <span>Choose a verification method</span></a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Form fields -->
+      <section class="form__container">
+        <hr class="horizontal__line" />
+        <div class="header__btns">
+          <button>Edit details</button>
+          <button>Print</button>
+        </div>
+
+        <form class="form">
+          <h3 class="preview__heading">Basic Information</h3>
+
+          <!-- ========================= -->
+          <!-- Basic Information section -->
+          <div class="fields__container">
+            <div>
+              <label for="">Tax Category</label><br /><input
+                type="text"
+                placeholder="Presumptive Tax"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">First name</label><br /><input
+                type="text"
+                placeholder="Enter first name here"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Surname</label><br /><input
+                type="text"
+                placeholder="Enter surname here"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Email</label><br /><input
+                type="text"
+                placeholder="Enter email address"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Phone number</label><br /><input
+                type="text"
+                placeholder="Enter phone number here"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">TIN (Optional)</label><br /><input
+                type="text"
+                placeholder="Enter your TIN"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">ID Type</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">ID Number</label><br /><input
+                type="text"
+                placeholder="Input ID number"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Employment Status</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div class="radio__container">
+              <label for="">Are you a business owner?</label>
+              <div>
+                <input type="radio" />
+                <label for="">Yes</label>
+              </div>
+              <div>
+                <input type="radio" />
+                <label for="">No</label>
+              </div>
+            </div>
+            <div>
+              <label for="">Name of Business</label><br /><input
+                type="text"
+                placeholder="Name of the Business"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">State</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Plateau</option>
+              </select>
+            </div>
+            <div>
+              <label for="">LGA</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Area</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Address</label><br /><input
+                type="text"
+                placeholder="Enter address here"
+                class="input__box"
+              />
+            </div>
+          </div>
+
+          <!-- ============================ -->
+          <!-- Business Information section -->
+          <h3 class="biz__info">Business Information</h3>
+          <div class="fields__container">
+            <div>
+              <label for="">Type of Business </label><br /><input
+                type="text"
+                placeholder="Enter type of business"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">No of Employees</label><br /><input
+                type="text"
+                placeholder="Enter number of employee"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Annual Revenue return In naira</label><br /><input
+                type="text"
+                placeholder="Enter revenue"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Value of business/assets In naira</label
+              ><br /><input
+                type="text"
+                placeholder="Enter value of business"
+                class="input__box"
+              />
+            </div>
+          </div>
+
+          <!-- ============================ -->
+          <!-- Account Credentials section -->
+          <h3 class="biz__info">Account Credentials</h3>
+          <div class="fields__container">
+            <div>
+              <label for="">Payer ID </label><br /><input
+                type="text"
+                placeholder="Payer ID here"
+                class="input__box"
+              />
+            </div>
+            <div>
+              <label for="">Password</label><br /><input
+                type="text"
+                placeholder="Password here"
+                class="input__box"
+              />
+            </div>
+          </div>
+          <button class="preview__btn">Continue</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
