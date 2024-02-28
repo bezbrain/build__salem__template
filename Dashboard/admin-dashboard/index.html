@@ -2,9 +2,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+          },
+        },
+      };
+    </script>
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <main></main>
+    <main>
+      <!-- Admin Dashboard Header -->
+      <header class="bg-white px-4 py-2 border-[1px]">
+        <section class="mx-auto items-center justify-between flex">
+          <img
+            src="../Logo.png"
+            alt="Dashboard logo"
+            class="w-[100px] surfaceDuo:w-[150px]"
+          />
+
+          <nav class="flex">
+            <ul class="space-x-[25px] surfaceDuo:space-x-12 xl:space-x-24 flex">
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-magnifying-glass opacity-50 text-xl"></i>
+                <span class="hidden lg:block">Search</span>
+              </li>
+              <li class="text-xl opacity-50 cursor-pointer">
+                <i class="fa-solid fa-bell"></i>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-regular fa-circle-question opacity-50 text-xl"></i
+                ><a href="" class="hidden lg:block">Help</a>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-gear opacity-50 text-xl"></i
+                ><span class="hidden lg:block">Settings</span>
+              </li>
+              <li class="space-x-2">
+                <span class="bg-[#1e39a6ff] text-white rounded-full p-[5px]"
+                  >DA</span
+                ><a href="" class="hidden lg:inline">David Adebola</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <!-- Sidebar -->
+      <aside>
+        <ul>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">Analytics</a></li>
+          <li><a href="">MDAs</a></li>
+          <li><a href="">Reports</a></li>
+          <li><a href="">Tax Payer Manager</a></li>
+          <li><a href="">Enumeration</a></li>
+          <li><a href="">Audit Trial</a></li>
+          <li><a href="">E-Service</a></li>
+          <li><a href="">eTCC Manager</a></li>
+          <li><a href="">PAYE Manager</a></li>
+          <li><a href="">User Management</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Help & Support</a></li>
+          <li><a href="">Log Out</a></li>
+        </ul>
+      </aside>
+    </main>
   </body>
 </html>
