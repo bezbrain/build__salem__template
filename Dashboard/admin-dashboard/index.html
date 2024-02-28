@@ -25,15 +25,16 @@
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <main>
+    <main class="bg-[#f7f5f5ff]">
       <!-- Admin Dashboard Header -->
       <header class="bg-white px-4 py-2 border-[1px]">
         <section class="mx-auto items-center justify-between flex">
-          <img
-            src="../Logo.png"
-            alt="Dashboard logo"
-            class="w-[100px] surfaceDuo:w-[150px]"
-          />
+          <a href=""
+            ><img
+              src="../Logo.png"
+              alt="Dashboard logo"
+              class="w-[100px] surfaceDuo:w-[150px]"
+          /></a>
 
           <nav class="flex">
             <ul class="space-x-[25px] surfaceDuo:space-x-12 xl:space-x-24 flex">
@@ -62,26 +63,124 @@
         </section>
       </header>
 
-      <!-- Sidebar -->
-      <aside>
-        <ul>
-          <li><a href="">Dashboard</a></li>
-          <li><a href="">Analytics</a></li>
-          <li><a href="">MDAs</a></li>
-          <li><a href="">Reports</a></li>
-          <li><a href="">Tax Payer Manager</a></li>
-          <li><a href="">Enumeration</a></li>
-          <li><a href="">Audit Trial</a></li>
-          <li><a href="">E-Service</a></li>
-          <li><a href="">eTCC Manager</a></li>
-          <li><a href="">PAYE Manager</a></li>
-          <li><a href="">User Management</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Help & Support</a></li>
-          <li><a href="">Log Out</a></li>
-        </ul>
-      </aside>
+      <section class="flex">
+        <!-- Sidebar -->
+        <aside class="py-8 bg-white w-[300px] min-h-[95vh]">
+          <ul class="">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-solid fa-table-cells-large text-2xl"></i
+                ><span>Dashboard</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-chart-simple text-2xl"></i
+                ><span>Analytics</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-regular fa-file-zipper text-2xl"></i
+                ><span>MDAs</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-solid fa-square-poll-vertical text-2xl"></i
+                ><span>Reports</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-2.5"
+                ><i class="fa-solid fa-user-plus text-lg"></i
+                ><span>Tax Payer Manager</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-wallet text-xl"></i
+                ><span>Enumeration</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-trailer text-lg"></i
+                ><span>Audit Trial</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-globe text-xl"></i
+                ><span>E-Service</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-network-wired text-lg"></i
+                ><span>eTCC Manager</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-regular fa-people-roof text-2xl"></i
+                ><span>PAYE Manager</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-list-check text-lg"></i
+                ><span>User Management</span></a
+              >
+            </li>
+          </ul>
+          <ul class="mt-[10vh]">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-regular fa-circle-question text-lg"></i
+                ><span>Help & Support</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <button class="flex items-center gap-3">
+                <i class="fa-solid fa-right-from-bracket text-lg"></i
+                ><span>Log Out</span>
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Body of the Dashboard -->
+        <div>
+          <p>Body of the Dashboard</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
