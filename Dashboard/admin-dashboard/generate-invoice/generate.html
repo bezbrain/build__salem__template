@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Generate Invoice</title>
+  </head>
+  <body>
+    <main
+      class="bg-[#f7f5f5ff] min-h-[100vh] gap-8 flex relative pb-8 lg:gap-12 lgScreen:gap-20"
+    >
+      <aside class="bg-white w-[70px] p-4 z-10 lgScreen:w-[300px] lg:w-[350px]">
+        <!-- Logo -->
+        <a href="" class="w-[130px] block">
+          <img src="../../Logo.png" alt="Logo" />
+        </a>
+        <!-- Aside items -->
+        <ul class="mt-24 mb-8">
+          <li class="mb-[20px] flex items-center gap-4 cursor-pointer">
+            <span
+              class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
+            ></span
+            ><a href="" class="hidden lg:inline"
+              ><h4 class="font-semibold">Billing Information</h4>
+              <span class="text-[13px]">Please enter your details</span></a
+            >
+          </li>
+          <li class="mb-[20px] flex items-center gap-4 cursor-pointer">
+            <span
+              class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
+            ></span
+            ><a href="" class="hidden lg:inline"
+              ><h4 class="font-semibold">Personal Details</h4>
+              <span class="text-[13px]"
+                >Please provide your personal details</span
+              ></a
+            >
+          </li>
+          <li class="mb-[20px] flex items-center gap-4 cursor-pointer">
+            <span
+              class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
+            ></span
+            ><a href="" class="hidden lg:inline"
+              ><h4 class="font-semibold">Generate Invoice</h4>
+              <span class="text-[13px]"
+                >Download your invoice or make payment</span
+              ></a
+            >
+          </li>
+          <li class="mb-[20px] flex items-center gap-4 cursor-pointer">
+            <span
+              class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
+            ></span
+            ><a href="" class="hidden lg:inline"
+              ><h4 class="font-semibold">Make Payment</h4>
+              <span class="text-[13px]"
+                >Choose a payment method and pay</span
+              ></a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <section class="w-full sm:w-[60%] xxl:w-[900px] pr-4">
+        <hr class="absolute top-16 left-0 w-full" />
+
+        <a href="" class="mt-24 mb-4 flex items-center gap-2"
+          ><span><i class="fa-solid fa-arrow-left"></i></span
+          ><span>Go back</span></a
+        >
+
+        <!--  -->
+      </section>
+    </main>
+  </body>
+</html>
