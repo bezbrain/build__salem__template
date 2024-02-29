@@ -2,6 +2,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Using config file while using cdn -->
     <script>
@@ -23,8 +27,10 @@
     <title>Generate Invoice</title>
   </head>
   <body>
-    <main class="bg-[#f7f5f5ff] min-h-[100vh] flex gap-20 relative pb-8">
-      <aside class="bg-white w-[70px] p-4 z-10 lgScreen:w-[300px] lg:w-[400px]">
+    <main
+      class="bg-[#f7f5f5ff] min-h-[100vh] gap-8 flex relative pb-8 lg:gap-12 lgScreen:gap-20"
+    >
+      <aside class="bg-white w-[70px] p-4 z-10 lgScreen:w-[300px] lg:w-[350px]">
         <!-- Logo -->
         <a href="" class="w-[130px] block">
           <img src="../../Logo.png" alt="Logo" />
@@ -76,49 +82,58 @@
         </ul>
       </aside>
 
-      <section class="mt-36">
+      <section class="mt-36 w-[80%] pr-8 lg:w-1/2 lgScreen:w-[500px]">
         <hr class="absolute top-16 left-0 w-full" />
 
-        <form class="">
+        <form class="max-w-[500px]">
           <h2 class="text-3xl font-semibold">Generate Invoice</h2>
-          <h4>Basic Information</h4>
+          <h4 class="font-semibold text-xl my-4">Basic Information</h4>
 
-          <div class="fields__container">
+          <div class="space-y-4">
             <div>
-              <label for="">Tax Category*</label><br /><input
-                type="text"
-                placeholder="Presumptive Tax"
-                class="input__box"
-              />
+              <label for="">Select your category*</label><br /><select
+                name=""
+                id=""
+                class="w-full h-[40px] rounded-md cursor-pointer px-2 text-lg border-[1px] mt-1"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div class="relative">
+              <label for="">MDA*</label><br /><select
+                name=""
+                id=""
+                class="w-full h-[40px] rounded-md cursor-pointer px-2 text-lg border-[1px] mt-1"
+              >
+                <option value="">Which MDA are you paying to?</option>
+              </select>
+              <i
+                class="fa-solid fa-circle-plus absolute translate-y-[40%] text-xl ml-2 cursor-pointer"
+              ></i>
             </div>
             <div>
-              <label for="">First name*</label><br /><input
-                type="text"
-                placeholder="Enter first name here"
-                class="input__box"
-              />
+              <label for="">What do you want to pay for?*</label><br /><select
+                name=""
+                id=""
+                class="w-full h-[40px] rounded-md cursor-pointer px-2 text-lg border-[1px] mt-1"
+              >
+                <option value="">What do you want to pay for?</option>
+              </select>
             </div>
             <div>
-              <label for="">Surname*</label><br /><input
+              <label for="">Amount</label><br /><input
                 type="text"
-                placeholder="Enter surname here"
-                class="input__box"
+                placeholder="0.00"
+                class="w-full h-[40px] rounded-md cursor-pointer px-4 text-lg border-[1px] mt-1"
               />
             </div>
-            <div>
-              <label for="">Email*</label><br /><input
-                type="text"
-                placeholder="Enter email address"
-                class="input__box"
-              />
-            </div>
-            <div>
-              <label for="">Phone number*</label><br /><input
-                type="text"
-                placeholder="Enter phone number here"
-                class="input__box"
-              />
-            </div>
+          </div>
+
+          <button
+            class="bg-[#1e39a6ff] w-full text-white py-2 rounded-md mt-4 text-lg"
+          >
+            Continue
+          </button>
         </form>
       </section>
     </main>
