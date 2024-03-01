@@ -13,7 +13,6 @@
         theme: {
           screens: {
             xxl: "1300px",
-            tablet: "1150px",
             xl: "1024px",
             lgScreen: "950px",
             lg: "820px",
@@ -31,7 +30,7 @@
     <main
       class="bg-[#f7f5f5ff] min-h-[100vh] gap-8 flex relative pb-8 lgScreen:gap-12"
     >
-      <aside class="bg-white w-[70px] p-4 z-10 lgScreen:w-[300px] lg:w-[350px]">
+      <aside class="bg-white w-[70px] p-4 z-10 xxl:w-[300px]">
         <!-- Logo -->
         <a href="" class="w-[130px] block">
           <img src="../../Logo.png" alt="Logo" />
@@ -42,7 +41,7 @@
             <span
               class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
             ></span
-            ><a href="" class="hidden lg:inline"
+            ><a href="" class="hidden xxl:inline"
               ><h4 class="font-semibold">Billing Information</h4>
               <span class="text-[13px]">Please enter your details</span></a
             >
@@ -51,7 +50,7 @@
             <span
               class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
             ></span
-            ><a href="" class="hidden lg:inline"
+            ><a href="" class="hidden xxl:inline"
               ><h4 class="font-semibold">Personal Details</h4>
               <span class="text-[13px]"
                 >Please provide your personal details</span
@@ -62,7 +61,7 @@
             <span
               class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
             ></span
-            ><a href="" class="hidden lg:inline"
+            ><a href="" class="hidden xxl:inline"
               ><h4 class="font-semibold">Generate Invoice</h4>
               <span class="text-[13px]"
                 >Download your invoice or make payment</span
@@ -73,7 +72,7 @@
             <span
               class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
             ></span
-            ><a href="" class="hidden lg:inline"
+            ><a href="" class="hidden xxl:inline"
               ><h4 class="font-semibold">Make Payment</h4>
               <span class="text-[13px]"
                 >Choose a payment method and pay</span
@@ -83,10 +82,135 @@
         </ul>
       </aside>
 
-      <section class="pr-4 w-full lg:w-[60%] tablet:w-[75%]">
+      <section class="w-full pr-4 ml-4 xxl:w-4/5">
         <hr class="absolute top-16 left-0 w-full" />
 
-        <!--  -->
+        <a href="" class="mt-24 mb-4 flex items-center gap-2 w-fit"
+          ><span><i class="fa-solid fa-arrow-left"></i></span
+          ><span>Go back</span></a
+        >
+
+        <!-- Invoice -->
+        <section
+          class="w-[700px] mx-auto border-[1px] p-4 bg-white border-2 border-[#1e39a6ff] border-b-[1.2rem]"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <p class="font-semibold">INVOICE</p>
+            <p class="flex items-center gap-1">
+              <img src="./invoice-code.png" alt="invoice" /><span
+                >BRN/2023/009</span
+              >
+            </p>
+          </div>
+
+          <img src="./Login-logo.png" alt="Logo" />
+
+          <div class="flex justify-between mt-4">
+            <div>
+              <p>FROM:</p>
+              <p class="font-semibold">Federal Inland Revenue Service</p>
+              <p>4 Secretariat Road · 0803 606 <br />3768 <br />Open now</p>
+              <p class="my-2">INFO:</p>
+              <p class="font-semibold">Payer ID: PLI-4508269731</p>
+              <p>Invoice Date: 26/10/2023</p>
+              <p>Due Date: 26/10/2023</p>
+              <p>Expiry Date: 30/10/2023</p>
+            </div>
+            <div>
+              <p>TO:</p>
+              <p class="font-semibold">Nasco Household P.L</p>
+              <p>
+                1 ,Mount Zion Road, <br />Ikot Ekpene, <br />Akwa Ibom, Nigeria,
+                <br />Ikot Ekpene L.G.A
+              </p>
+            </div>
+          </div>
+
+          <table class="w-full my-4 text-lg bg-[#f7f5f5ff]">
+            <thead>
+              <tr class="text-left text-white bg-[#1e39a6ff]">
+                <th class="w-[30%] p-2">ITEM DESCRIPTION</th>
+                <th class="w-[10%]">QTY</th>
+                <th class="w-[20%]">RATE</th>
+                <th class="w-[30%] text-right p-2">AMOUNT(N)</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="pt-2 pl-2 pb-8">Tax Clearance Certificate</td>
+                <td class="pt-2 pb-8">01</td>
+                <td class="pt-2 pb-8">N1,500.00</td>
+                <td class="text-right p-2 pb-8">N1,500.00</td>
+              </tr>
+              <tr>
+                <td class="pl-2">Sub Total</td>
+                <td></td>
+                <td></td>
+                <td class="text-right pr-2">N1,500.00</td>
+              </tr>
+              <tr>
+                <td class="pl-2">Discount</td>
+                <td></td>
+                <td></td>
+                <td class="text-right pr-2">N0.00</td>
+              </tr>
+              <tr>
+                <td class="font-semibold pl-2">Grand Total</td>
+                <td></td>
+                <td></td>
+                <td class="text-right pr-2">N1,500.00</td>
+              </tr>
+              <tr>
+                <td class="font-semibold pl-2 pb-4">Paying</td>
+                <td></td>
+                <td></td>
+                <td
+                  class="text-right pr-2 text-[#1e39a6ff] font-semibold flex items-center gap-3 justify-end cursor-pointer"
+                >
+                  <span>Edit</span><i class="fa-solid fa-pen"></i
+                  ><span>N1,500.00</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="font-semibold">AMOUNT IN WORDS</h3>
+          <p>One Thousand Five Hundred Naira Only</p>
+
+          <div class="flex justify-between items-center my-6">
+            <img src="./QR.png" alt="QR Code" />
+
+            <div>
+              <img src="./signature.png" alt="Signature" />
+              <hr class="h-[2px] bg-black" />
+              <h3 class="font-semibold">Executive Chairman PSIRS</h3>
+            </div>
+          </div>
+
+          <footer class="flex gap-8">
+            <img src="./Login-logo.png" alt="Logo" />
+            <p>
+              <span>The State Internal Revenue Service</span>
+              <br /><span>info@ysirs.gov.ng 08031230301, 07056990777</span>
+            </p>
+          </footer>
+        </section>
+
+        <footer class="w-fit mx-auto text-center">
+          <div class="flex justify-between w-full border-2 gap-4">
+            <button
+              class="bg-[#d2d6faff] px-12 py-2 rounded-md text-lg text-[#1e39a6ff] font-semibold"
+            >
+              <i class="fa-solid fa-print"></i> <span>Print Invoice</span>
+            </button>
+            <button
+              class="bg-[#1e39a6ff] text-white px-12 py-2 rounded-md text-lg flex items-center gap-2"
+            >
+              <span>Return to home page</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </footer>
       </section>
     </main>
   </body>
