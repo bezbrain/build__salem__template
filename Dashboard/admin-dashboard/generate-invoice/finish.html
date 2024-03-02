@@ -94,106 +94,115 @@
         <section
           class="w-[700px] mx-auto border-[1px] p-4 bg-white border-2 border-[#1e39a6ff] border-b-[1.2rem]"
         >
-          <div class="flex justify-between items-center mb-2">
-            <p class="font-semibold">INVOICE</p>
-            <p class="flex items-center gap-1">
-              <img src="./invoice-code.png" alt="invoice" /><span
-                >BRN/2023/009</span
-              >
+          <div class="flex justify-between mb-2">
+            <p class="font-semibold text-xl">BRN4530128679</p>
+            <img src="./Ondo-logo.png" alt="invoice" />
+            <p class="flex gap-1">Date: October 25th, 2023</p>
+          </div>
+
+          <div class="flex justify-between mt-4">
+            <p>
+              <i class="fa-regular fa-envelope"></i>
+              <span>info@odirs.gov.ng</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <span>08031230301, 07056990777</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-globe"></i>
+              <span>www.odirs.com</span>
             </p>
           </div>
 
-          <img src="./Login-logo.png" alt="Logo" />
-
-          <div class="flex justify-between mt-4">
-            <div>
-              <p>FROM:</p>
-              <p class="font-semibold">Federal Inland Revenue Service</p>
-              <p>4 Secretariat Road · 0803 606 <br />3768 <br />Open now</p>
-              <p class="my-2">INFO:</p>
-              <p class="font-semibold">Payer ID: PLI-4508269731</p>
-              <p>Invoice Date: 26/10/2023</p>
-              <p>Due Date: 26/10/2023</p>
-              <p>Expiry Date: 30/10/2023</p>
-            </div>
-            <div>
-              <p>TO:</p>
-              <p class="font-semibold">Nasco Household P.L</p>
-              <p>
-                1 ,Mount Zion Road, <br />Ikot Ekpene, <br />Akwa Ibom, Nigeria,
-                <br />Ikot Ekpene L.G.A
-              </p>
-            </div>
+          <div class="w-fit mx-auto mt-4 text-center">
+            <h1 class="text-3xl font-bold">ONDO STATE GOVERNMENT</h1>
+            <h2 class="text-2xl font-bold leading-[3rem]">
+              INTERNAL REVENUE SERVICE
+            </h2>
+            <button
+              class="bg-[#1e39a6ff] py-2 rounded-3xl text-lg text-[#fff] font-semibold lg:px-12 px-4"
+            >
+              PAYMENT RECEIVE
+            </button>
           </div>
 
-          <table class="w-full my-4 text-lg bg-[#f7f5f5ff]">
+          <img src="./QR.png" alt="QR Code" class="ml-auto -mt-10" />
+
+          <div class="flex justify-between mt-4">
+            <p>
+              This is from:
+              <span class="font-bold">INTERNAL REVENUE SERVICE</span>
+            </p>
+            <p>
+              This is to: <span class="font-bold">Nasco Household P.L</span>
+            </p>
+          </div>
+
+          <hr class="h-[5px] bg-black mt-4" />
+
+          <table class="w-full text-lg">
             <thead>
-              <tr class="text-left text-white bg-[#1e39a6ff]">
-                <th class="w-[30%] p-2">ITEM DESCRIPTION</th>
-                <th class="w-[10%]">QTY</th>
-                <th class="w-[20%]">RATE</th>
-                <th class="w-[30%] text-right p-2">AMOUNT(N)</th>
+              <tr class="text-right">
+                <th class="w-[5%] text-left p-2">ITEM</th>
+                <th class="w-[40%]">DESCRIPTION</th>
+                <th class="w-[20%]">PRICE</th>
+                <th class="w-[25%] p-2">AMOUNT</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td class="pt-2 pl-2 pb-8">Tax Clearance Certificate</td>
-                <td class="pt-2 pb-8">01</td>
-                <td class="pt-2 pb-8">N1,500.00</td>
-                <td class="text-right p-2 pb-8">N1,500.00</td>
-              </tr>
-              <tr>
-                <td class="pl-2">Sub Total</td>
-                <td></td>
-                <td></td>
-                <td class="text-right pr-2">N1,500.00</td>
-              </tr>
-              <tr>
-                <td class="pl-2">Discount</td>
-                <td></td>
-                <td></td>
-                <td class="text-right pr-2">N0.00</td>
-              </tr>
-              <tr>
-                <td class="font-semibold pl-2">Grand Total</td>
-                <td></td>
-                <td></td>
-                <td class="text-right pr-2">N1,500.00</td>
-              </tr>
-              <tr>
-                <td class="font-semibold pl-2 pb-4">Paying</td>
-                <td></td>
-                <td></td>
-                <td
-                  class="text-right pr-2 text-[#1e39a6ff] font-semibold flex items-center gap-3 justify-end cursor-pointer"
-                >
-                  <span>Edit</span><i class="fa-solid fa-pen"></i
-                  ><span>N1,500.00</span>
+                <td class="pt-2 pl-2 pb-8">1.</td>
+                <td class="pt-2 pb-8 text-right">
+                  Change of Ownership for Motor Cycle
                 </td>
+                <td class="pt-2 pb-8 text-right">N500.00</td>
+                <td class="text-right p-2 pb-8">N500.00</td>
+              </tr>
+              <tr>
+                <td class="pl-2"></td>
+                <td class="text-right font-semibold">DISCOUNT</td>
+                <td class="text-right font-semibold">0.00</td>
+                <td class="text-right pr-2 font-semibold">0.00</td>
+              </tr>
+              <tr>
+                <td class="pl-2"></td>
+                <td class="text-right font-semibold">SUBTOTAL</td>
+                <td class="text-right font-semibold">N500.00</td>
+                <td class="text-right font-semibold pr-2">N500.00</td>
               </tr>
             </tbody>
           </table>
-          <h3 class="font-semibold">AMOUNT IN WORDS</h3>
-          <p>One Thousand Five Hundred Naira Only</p>
 
-          <div class="flex justify-between items-center my-6">
-            <img src="./QR.png" alt="QR Code" />
+          <div class="flex justify-between items-end px-2">
+            <p>
+              <span class="font-semibold">AMOUNT IN WORDS</span>
+              <br /><span>One Thousand Five Hundred Naira Only</span>
+            </p>
+            <p class="font-semibold text-xl">TOTAL N500.00</p>
+          </div>
 
+          <hr class="h-[5px] bg-black mt-4" />
+
+          <div class="flex justify-between mt-4">
             <div>
-              <img src="./signature.png" alt="Signature" />
-              <hr class="h-[2px] bg-black" />
-              <h3 class="font-semibold">Executive Chairman PSIRS</h3>
+              <p class="font-semibold">Payer ID: ODI-4508269731</p>
+              <p><span class="font-semibold">Due Date:</span> 26/10/2023</p>
+            </div>
+            <div>
+              <p><span class="font-semibold">Invoice Date:</span> 26/10/2023</p>
+              <p><span class="font-semibold">Expiry Date:</span> 30/10/2023</p>
             </div>
           </div>
 
-          <footer class="flex gap-8">
-            <img src="./Login-logo.png" alt="Logo" />
-            <p>
-              <span>The State Internal Revenue Service</span>
-              <br /><span>info@ysirs.gov.ng 08031230301, 07056990777</span>
-            </p>
-          </footer>
+          <div class="w-fit ml-auto mt-8">
+            <img src="./signature.png" alt="Signature" />
+            <hr class="h-[2px] bg-black" />
+            <h3 class="font-semibold">Executive Chairman PSIRS</h3>
+          </div>
+
+          <img src="./Login-logo.png" alt="Logo" />
         </section>
 
         <footer class="w-fit mx-auto text-center mt-4">
