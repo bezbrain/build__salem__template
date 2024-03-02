@@ -1,0 +1,209 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Admin Analytics</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f5f5ff]">
+      <!-- Admin Dashboard Header -->
+      <header class="bg-white px-4 py-2 border-[1px]">
+        <section class="mx-auto items-center justify-between flex">
+          <a href=""
+            ><img
+              src="../Logo.png"
+              alt="Dashboard logo"
+              class="w-[100px] surfaceDuo:w-[150px]"
+          /></a>
+
+          <nav class="flex">
+            <ul class="space-x-[25px] surfaceDuo:space-x-12 xl:space-x-24 flex">
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-magnifying-glass opacity-50 text-xl"></i>
+                <span class="hidden lg:block">Search</span>
+              </li>
+              <li class="text-xl opacity-50 cursor-pointer">
+                <i class="fa-solid fa-bell"></i>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-regular fa-circle-question opacity-50 text-xl"></i
+                ><a href="" class="hidden lg:block">Help</a>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-gear opacity-50 text-xl"></i
+                ><span class="hidden lg:block">Settings</span>
+              </li>
+              <li class="space-x-2">
+                <span class="bg-[#1e39a6ff] text-white rounded-full p-[5px]"
+                  >DA</span
+                ><a href="" class="hidden lg:inline">David Adebola</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <section class="flex">
+        <!-- Sidebar -->
+        <aside class="py-8 bg-white min-h-[95vh] xl:w-[300px]">
+          <ul class="">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-solid fa-table-cells-large text-2xl"></i
+                ><span class="hidden xl:inline">Dashboard</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-chart-simple text-2xl"></i
+                ><span class="hidden xl:inline">Analytics</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-regular fa-file-zipper text-2xl"></i
+                ><span class="hidden xl:inline">MDAs</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-solid fa-square-poll-vertical text-2xl"></i
+                ><span class="hidden xl:inline">Reports</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-2.5"
+                ><i class="fa-solid fa-user-plus text-lg"></i
+                ><span class="hidden xl:inline">Tax Payer Manager</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-wallet text-xl"></i
+                ><span class="hidden xl:inline">Enumeration</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-trailer text-lg"></i
+                ><span class="hidden xl:inline">Audit Trial</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-globe text-xl"></i
+                ><span class="hidden xl:inline">E-Service</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-network-wired text-lg"></i
+                ><span class="hidden xl:inline">eTCC Manager</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-regular fa-people-roof text-2xl"></i
+                ><span class="hidden xl:inline">PAYE Manager</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-list-check text-lg"></i
+                ><span class="hidden xl:inline">User Management</span></a
+              >
+            </li>
+          </ul>
+          <ul class="mt-[10vh]">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-regular fa-circle-question text-lg"></i
+                ><span class="hidden xl:inline">Help & Support</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <button class="flex items-center gap-3">
+                <i class="fa-solid fa-right-from-bracket text-lg"></i
+                ><span class="hidden xl:inline">Log Out</span>
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Body of the Dashboard -->
+        <div class="w-full px-4 xl:w-4/5 mb-8">
+          <h2 class="text-xl font-semibold mt-4 sm:text-2xl">Analytics</h2>
+
+          <hr class="my-4" />
+
+          <!-- Analytics routes (Taxpayer relations) -->
+          <div
+            class="grid gap-2 justify-between my-4 text-sm iPhone:grid-cols-2 lg:flex"
+          >
+            <a href="" class="font-semibold w-fit">REVENUE PERFORMANCE</a>
+            <a href="" class="font-semibold">INVOICE MANAGER</a>
+            <a href="" class="font-semibold">TAXPAYER RELATIONS</a>
+            <a href="" class="font-semibold border-b-[#1e39a6ff] border-b-2"
+              >TIN REQUEST MANAGER
+            </a>
+            <a href="" class="font-semibold">E-SERVICES </a>
+          </div>
+
+          <!-- Charts and Graphs -->
+          <div class="grid gap-4 md:grid-cols-2 mt-8">
+            <div class="h-[350px] border-[1px] bg-white rounded-lg"></div>
+            <div class="h-[350px] border-[1px] bg-white rounded-lg"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
