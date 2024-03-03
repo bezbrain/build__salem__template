@@ -1,0 +1,347 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mac: "1400px",
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>MDAs</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f5f5ff]">
+      <!-- Dashboard Header -->
+      <header class="bg-white px-4 py-2 border-[1px]">
+        <section class="mx-auto items-center justify-between flex">
+          <a href=""
+            ><img
+              src="../../Logo.png"
+              alt="Dashboard logo"
+              class="w-[100px] h-fit surfaceDuo:w-[150px]"
+          /></a>
+
+          <nav class="flex">
+            <ul class="space-x-[25px] surfaceDuo:space-x-12 xl:space-x-24 flex">
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-magnifying-glass opacity-50 text-xl"></i>
+                <span class="hidden lg:block">Search</span>
+              </li>
+              <li class="text-xl opacity-50 cursor-pointer">
+                <i class="fa-solid fa-bell"></i>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-regular fa-circle-question opacity-50 text-xl"></i
+                ><a href="" class="hidden lg:block">Help</a>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-gear opacity-50 text-xl"></i
+                ><span class="hidden lg:block">Settings</span>
+              </li>
+              <li class="space-x-2">
+                <span class="bg-[#1e39a6ff] text-white rounded-full p-[5px]"
+                  >DA</span
+                ><a href="" class="hidden lg:inline">David Adebola</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <section class="flex">
+        <!-- Sidebar -->
+        <aside class="py-8 bg-white min-h-[95vh] lgScreen:w-[300px]">
+          <ul class="">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-solid fa-table-cells-large text-2xl"></i
+                ><span class="hidden lgScreen:inline">Dashboard</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-chart-simple text-2xl"></i
+                ><span class="hidden lgScreen:inline">Analytics</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-regular fa-file-zipper text-2xl"></i
+                ><span class="hidden lgScreen:inline">MDAs</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-solid fa-square-poll-vertical text-2xl"></i
+                ><span class="hidden lgScreen:inline">Reports</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-2.5"
+                ><i class="fa-solid fa-user-plus text-lg"></i
+                ><span class="hidden lgScreen:inline"
+                  >Tax Payer Manager</span
+                ></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-wallet text-xl"></i
+                ><span class="hidden lgScreen:inline">Enumeration</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-trailer text-lg"></i
+                ><span class="hidden lgScreen:inline">Audit Trial</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-globe text-xl"></i
+                ><span class="hidden lgScreen:inline">E-Service</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-network-wired text-lg"></i
+                ><span class="hidden lgScreen:inline">eTCC Manager</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-regular fa-people-roof text-2xl"></i
+                ><span class="hidden lgScreen:inline">PAYE Manager</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-list-check text-lg"></i
+                ><span class="hidden lgScreen:inline">User Management</span></a
+              >
+            </li>
+          </ul>
+          <ul class="mt-[10vh]">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-regular fa-circle-question text-lg"></i
+                ><span class="hidden lgScreen:inline">Help & Support</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <button class="flex items-center gap-3">
+                <i class="fa-solid fa-right-from-bracket text-lg"></i
+                ><span class="hidden lgScreen:inline">Log Out</span>
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Body of the Dashboard (MDAs) -->
+        <div class="w-full px-4 lgScreen:w-4/5 mb-8 overflow-x-hidden">
+          <div class="flex justify-between items-center my-4">
+            <h2 class="text-xl font-semibold sm:text-3xl">MDAs</h2>
+            <select class="px-2 py-1 rounded-md border-2 sm:px-4 sm:py-2">
+              <option value="">MDA List</option>
+            </select>
+          </div>
+
+          <hr class="w-full mb-4" />
+
+          <a href="" class="flex items-center gap-2 w-fit"
+            ><span><i class="fa-solid fa-arrow-left"></i></span
+            ><span>Go back</span></a
+          >
+
+          <div class="">
+            <h2 class="text-3xl font-semibold mt-4 mb-1">User</h2>
+
+            <div class="flex items-center justify-between mb-4">
+                <img src="../user-img.png" alt="User">
+                <button class="bg-[#1e39a6ff] text-white px-8 py-1 rounded-md">Edit</button>
+            </div>
+
+            <!-- User Form -->
+            <form class="">
+            <div class="grid gap-4 lgScreen:grid-cols-2">
+              <div>
+                <label for="">Name of user*</label><br /><input
+                  type="text"
+                  placeholder="David Adebola"
+                  class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+                />
+              </div>
+              <div>
+                <label for="">Email*</label><br /><input
+                  type="text"
+                  placeholder="davida@gmail.com "
+                  class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+                />
+              </div>
+              <div>
+                <label for="">Phone number*</label><br /><input
+                  type="text"
+                  placeholder="+234"
+                  class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+                />
+              </div>
+              <div>
+                <label for="">Password*</label><br /><input
+                  type="text"
+                  placeholder="**********"
+                  class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+                />
+              </div>
+            </div>
+            
+            <h3 class="mt-8 mb-2 text-xl font-semibold">Access level</h3>
+            <div class="grid gap-4 lgScreen:grid-cols-2">
+              <div>
+                <label for="">Revenue Head*</label><br />
+                <select name="" id="" class="w-full h-[40px] rounded-md px-2 border-[1px] mt-1">
+                    <option value="">Full access</option>
+                </select>
+              </div>
+              <div>
+                <label for="">Payment*</label><br /><select name="" id="" class="w-full h-[40px] rounded-md px-2 border-[1px] mt-1">
+                    <option value="">View only</option>
+                </select>
+              </div>
+              <div>
+                <label for="">Users*</label><br /><select name="" id="" class="w-full h-[40px] rounded-md px-2 border-[1px] mt-1">
+                    <option value="">View only</option>
+                </select>
+              </div>
+              <div>
+                <label for="">Report*</label><br /><select name="" id="" class="w-full h-[40px] rounded-md px-2 border-[1px] mt-1">
+                    <option value="">View only</option>
+                </select>
+              </div>
+            </div>
+          </form>
+
+            <!-- User table -->
+            <div class="w-full overflow-x-auto">
+                <h3 class="mt-4 mb-2 text-xl font-semibold">Activity log</h3>
+            <table class="w-[1200px] mt-4 bg-[#fff] border-2 rounded-lg mac:w-full text-sm">
+            <thead>
+              <tr class="text-left opacity-70 border-b-2">
+                <th class="p-4">Date & Time</th>
+                <th class="text-left">Revenue head</th>
+                <th class="text-center">Name of citizen</th>
+                <th class="text-center p-2">Amount</th>
+                <th class="text-center p-2">Amount received</th>
+                <th class="text-center p-2">Reference no.</th>
+                <th class="text-center p-2">Mode of payment</th>
+                <th class="text-center p-2"></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="text-center bg-[#f2f4f5ff]">
+                <td class="p-5 text-left">10/02/2023  9.00AM</td>
+                <td class="text-left">REGISTRATION OF FISHING BOATS</td>
+                <td>David Adebola</td>
+                <td>N100,000</td>
+                <td class="">N100,000</td>
+                <td class="pr-6">123456789</td>
+                <td class="pr-6">Cash</td>
+                <td class="pr-6"><i class="fa-solid fa-trash cursor-pointer"></i></td>
+              </tr>
+              <tr class="text-center bg-[#fff]">
+                <td class="p-5 text-left">10/02/2023  9.00AM</td>
+                <td class="text-left">REGISTRATION OF FISHING BOATS</td>
+                <td>Ibrahim Ahmad</td>
+                <td>N100,000</td>
+                <td class="">N100,000</td>
+                <td class="pr-6">123456789</td>
+                <td class="pr-6">POS</td>
+                <td class="pr-6"><i class="fa-solid fa-trash cursor-pointer"></i></td>
+              </tr>
+              <tr class="text-center bg-[#f2f4f5ff]">
+                <td class="p-5 text-left">10/02/2023  9.00AM</td>
+                <td class="text-left">REGISTRATION  OF FARMERS -RUBBER</td>
+                <td>Patani Tonbara</td>
+                <td>N100,000</td>
+                <td class="">N100,000</td>
+                <td class="pr-6">123456789</td>
+                <td class="pr-6">POS</td>
+                <td class="pr-6"><i class="fa-solid fa-trash cursor-pointer"></i></td>
+              </tr>
+              <tr class="text-center bg-[#fff]">
+                <td class="p-5 text-left">10/02/2023  9.00AM</td>
+                <td class="text-left">TRACTOR HIRING SERVICE</td>
+                <td>Oluwakemi Ajiboye</td>
+                <td>N100,000</td>
+                <td class="">N100,000</td>
+                <td class="pr-6">123456789</td>
+                <td class="pr-6">Cash</td>
+                <td class="pr-6"><i class="fa-solid fa-trash cursor-pointer"></i></td>
+              </tr>
+              <tr class="text-center bg-[#f2f4f5ff]">
+                <td class="p-5 text-left">10/02/2023  9.00AM</td>
+                <td class="text-left">TRACTOR HIRING SERVICE</td>
+                <td>Diezieni Alison</td>
+                <td>N100,000</td>
+                <td class="">N100,000</td>
+                <td class="pr-6">123456789</td>
+                <td class="pr-6">POS</td>
+                <td class="pr-6"><i class="fa-solid fa-trash cursor-pointer"></i></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="flex bg-white py-3 px-5 gap-4 w-[1200px] mac:w-full">
+              <button class="border-2 px-3 py-1 rounded-md">Previous</button>
+              <button class="border-2 px-3 py-1 rounded-md">Next</button>
+              <span class="ml-auto block">Page 1</span>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
