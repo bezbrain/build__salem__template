@@ -82,7 +82,7 @@
         </ul>
       </aside>
 
-      <section class="w-full pr-4 ml-4 xxl:w-4/5">
+      <section class="w-full pr-4 ml-4 xxl:w-4/5 overflow-x-auto">
         <hr class="absolute top-16 left-0 w-full" />
 
         <a href="" class="mt-24 mb-4 flex items-center gap-2 w-fit"
@@ -207,7 +207,7 @@
 
         <footer class="w-fit mx-auto text-center mt-4">
           <div
-            class="flex gap-[15vw] lg:justify-between mx-auto w-fit lg:w-full"
+            class="flex gap-4 lg:justify-between mx-auto w-fit lg:w-full sm:gap-[15vw]"
           >
             <button
               class="bg-[#d2d6faff] py-2 rounded-md text-[#1e39a6ff] font-semibold px-4 lg:text-lg lg:px-12"
@@ -217,7 +217,10 @@
             <button
               class="bg-[#1e39a6ff] text-white py-2 rounded-md flex items-center gap-2 px-4 lg:text-lg lg:px-12"
             >
-              <span>Return to home page</span>
+              <span
+                >Return
+                <span class="hidden surfaceDuo:inline">to home page</span></span
+              >
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
