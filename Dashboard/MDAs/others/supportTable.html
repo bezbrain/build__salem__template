@@ -181,7 +181,7 @@
         </aside>
 
         <!-- Body of the Dashboard (MDAs) -->
-        <div class="w-full px-4 lgScreen:w-4/5 mb-8">
+        <div class="w-full px-4 lgScreen:w-4/5 mb-8 overflow-x-hidden">
           <div class="flex justify-between items-center my-4">
             <h2 class="text-xl font-semibold sm:text-3xl">MDAs</h2>
             <select class="px-2 py-1 rounded-md border-2 sm:px-4 sm:py-2">
@@ -194,55 +194,118 @@
           <div class="">
             <h2 class="text-3xl font-semibold my-4">Support</h2>
 
-            <table class="w-full my-4 text-lg bg-[#fff] border-2 rounded-lg">
+            <!-- Support table -->
+            <div class="w-full overflow-x-auto">
+            <table class="w-[800px] mt-4 bg-[#fff] border-2 rounded-lg lg:w-full">
             <thead>
-              <tr class="text-left">
-                <th class="p-2">
-                    <span><i class="fa-solid fa-minus"></i></span>
+              <tr class="text-left opacity-70 border-b-2">
+                <th class="p-4">
+                    <i class="fa-solid fa-minus border-2 border-[#1e39a6ff] rounded-md text-[#1e39a6ff] text-sm px-[4px]"></i>
                     <span>User ID</span>
-                    <span><i class="fa-solid fa-arrow-down"></i></span>
+                    <i class="fa-solid fa-arrow-down text-sm"></i>
                 </th>
-                <th class="">Name of User</th>
-                <th class="">Subject</th>
-                <th class=" text-right p-2">Date sent</th>
-                <th class=" text-right p-2">Status</th>
-                <th class=" text-right p-2"></th>
+                <th class="text-center">Name of User</th>
+                <th class="text-center">Subject</th>
+                <th class="text-center p-2">Date sent</th>
+                <th class="text-center p-2">Status</th>
+                <th class="text-center p-2"></th>
               </tr>
             </thead>
 
             <tbody>
-              <tr>
-                <td class="pt-2 pl-2 pb-8">Tax Clearance Certificate</td>
-                <td class="pt-2 pb-8">01</td>
-                <td class="pt-2 pb-8">N1,500.00</td>
-                <td class="text-right p-2 pb-8">N1,500.00</td>
+              <tr class="text-center bg-[#f2f4f5ff]">
+                <td class="p-5 text-left">
+                    <span>
+                        <input type="checkbox" class="cursor-pointer">
+                        <label for="">52166565161</label>
+                    </span>
+                </td>
+                <td>David A.</td>
+                <td>Download error</td>
+                <td>08/03/2023</td>
+                <td class="">
+                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Answered</span>
+                </td>
+                <td class="pr-6">
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                </td>
               </tr>
-              <tr>
-                <td class="pl-2">Sub Total</td>
-                <td></td>
-                <td></td>
-                <td class="text-right pr-2">N1,500.00</td>
+              <tr class="text-center">
+                <td class="p-5 text-left">
+                    <span>
+                        <input type="checkbox" class="cursor-pointer">
+                        <label for="">52166565161</label>
+                    </span>
+                </td>
+                <td>Oluwakemi</td>
+                <td>Aceess error</td>
+                <td>08/03/2023</td>
+                <td class="">
+                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Answered</span>
+                </td>
+                <td class="pr-6">
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                </td>
               </tr>
-              <tr>
-                <td class="pl-2">Discount</td>
-                <td></td>
-                <td></td>
-                <td class="text-right pr-2">N0.00</td>
+              <tr class="text-center bg-[#f2f4f5ff]">
+                <td class="p-5 text-left">
+                    <span>
+                        <input type="checkbox" class="cursor-pointer">
+                        <label for="">52166565161</label>
+                    </span>
+                </td>
+                <td>Bashir</td>
+                <td>Download error</td>
+                <td>08/03/2023</td>
+                <td class="">
+                    <span class="text-[#b82f25ff] bg-[#fff3f2ff] px-2 py-1 font-semibold rounded-xl">Pending</span>
+                </td>
+                <td class="pr-6">
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                </td>
               </tr>
-              <tr>
-                <td class="font-semibold pl-2">Grand Total</td>
-                <td></td>
-                <td></td>
-                <td class="text-right pr-2">N1,500.00</td>
+              <tr class="text-center">
+                <td class="p-5 text-left">
+                    <span>
+                        <input type="checkbox" class="cursor-pointer">
+                        <label for="">52166565161</label>
+                    </span>
+                </td>
+                <td>Ibrahim</td>
+                <td>Download error</td>
+                <td>08/03/2023</td>
+                <td class="">
+                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Answered</span>
+                </td>
+                <td class="pr-6">
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                </td>
               </tr>
-              <tr>
-                <td class="font-semibold pl-2 pb-4">Paying</td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <tr class="text-center bg-[#f2f4f5ff]">
+                <td class="p-5 text-left">
+                    <span>
+                        <input type="checkbox" class="cursor-pointer">
+                        <label for="">52166565161</label>
+                    </span>
+                </td>
+                <td>Oluwafemi</td>
+                <td>Download error</td>
+                <td>08/03/2023</td>
+                <td class="">
+                    <span class="text-[#b82f25ff] bg-[#fff3f2ff] px-2 py-1 font-semibold rounded-xl">Pending</span>
+                </td>
+                <td class="pr-6">
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                </td>
               </tr>
             </tbody>
           </table>
+          <div class="flex bg-white py-3 px-5 gap-4 w-[800px] lg:w-full">
+              <button class="border-2 px-3 py-1 rounded-md">Previous</button>
+              <button class="border-2 px-3 py-1 rounded-md">Next</button>
+              <span class="ml-auto block">Page 1</span>
+          </div>
+        </div>
         </div>
       </section>
     </main>
