@@ -33,7 +33,7 @@
         <section class="mx-auto items-center justify-between flex">
           <a href=""
             ><img
-              src="../Logo.png"
+              src="../../Logo.png"
               alt="Dashboard logo"
               class="w-[100px] h-fit surfaceDuo:w-[150px]"
           /></a>
@@ -181,7 +181,7 @@
         </aside>
 
         <!-- Body of the Dashboard (MDAs) -->
-        <div class="w-full px-4 lgScreen:w-3/5 mb-8">
+        <div class="w-full px-4 lgScreen:w-4/5 mb-8">
           <div class="flex justify-between items-center my-4">
             <h2 class="text-xl font-semibold sm:text-3xl">MDAs</h2>
             <select class="px-2 py-1 rounded-md border-2 sm:px-4 sm:py-2">
@@ -191,62 +191,58 @@
 
           <hr class="w-full mb-4" />
 
-          <a href="" class="flex items-center gap-2 w-fit"
-            ><span><i class="fa-solid fa-arrow-left"></i></span
-            ><span>Go back</span></a
-          >
-
-          <form class="">
+          <div class="">
             <h2 class="text-3xl font-semibold my-4">Support</h2>
 
-            <div class="grid gap-4 lgScreen:grid-cols-2">
-              <div>
-                <label for="">Name of user*</label><br /><input
-                  type="text"
-                  placeholder="David Adebola"
-                  class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
-                />
-              </div>
-              <div>
-                <label for="">User ID*</label><br /><input
-                  type="text"
-                  placeholder="M5454165156"
-                  class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
-                />
-              </div>
-              <div>
-                <label for="">Email*</label><br /><input
-                  type="text"
-                  placeholder="davida@gmail.com "
-                  class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
-                />
-              </div>
-              <div>
-                <label for="">Subject*</label><br /><input
-                  type="text"
-                  placeholder="Access error"
-                  class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
-                />
-              </div>
-            </div>
+            <table class="w-full my-4 text-lg bg-[#fff] border-2 rounded-lg">
+            <thead>
+              <tr class="text-left">
+                <th class="p-2">
+                    <span><i class="fa-solid fa-minus"></i></span>
+                    <span>User ID</span>
+                    <span><i class="fa-solid fa-arrow-down"></i></span>
+                </th>
+                <th class="">Name of User</th>
+                <th class="">Subject</th>
+                <th class=" text-right p-2">Date sent</th>
+                <th class=" text-right p-2">Status</th>
+                <th class=" text-right p-2"></th>
+              </tr>
+            </thead>
 
-            <div class="mt-4">
-              <label for="">Message*</label>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="3"
-                placeholder="The mail I got stated I had access to download reports but on logging in, I can’t download any report. Please confirm from your end. Thank you."
-                class="w-full border-[1px] rounded-md mt-1 py-2 px-4"
-              ></textarea>
-            </div>
-            <button
-              class="bg-[#1e39a6ff] w-full text-white py-2 rounded-md mt-4 text-lg sm:w-[300px] sm:mx-auto sm:block"
-            >
-              Forward to IT support
-            </button>
-          </form>
+            <tbody>
+              <tr>
+                <td class="pt-2 pl-2 pb-8">Tax Clearance Certificate</td>
+                <td class="pt-2 pb-8">01</td>
+                <td class="pt-2 pb-8">N1,500.00</td>
+                <td class="text-right p-2 pb-8">N1,500.00</td>
+              </tr>
+              <tr>
+                <td class="pl-2">Sub Total</td>
+                <td></td>
+                <td></td>
+                <td class="text-right pr-2">N1,500.00</td>
+              </tr>
+              <tr>
+                <td class="pl-2">Discount</td>
+                <td></td>
+                <td></td>
+                <td class="text-right pr-2">N0.00</td>
+              </tr>
+              <tr>
+                <td class="font-semibold pl-2">Grand Total</td>
+                <td></td>
+                <td></td>
+                <td class="text-right pr-2">N1,500.00</td>
+              </tr>
+              <tr>
+                <td class="font-semibold pl-2 pb-4">Paying</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
     </main>
