@@ -1,0 +1,149 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mac: "1400px",
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Create MDA Form</title>
+  </head>
+  <body>
+    <main class="min-h-[100vh] flex justify-center items-center py-12">
+      <form class="w-[800px] px-4">
+        <i
+          class="fa-solid fa-xmark text-right block text-4xl cursor-pointer"
+        ></i>
+        <h2 class="text-center font-semibold text-2xl">Create MDA</h2>
+        <hr class="mt-2 mb-4" />
+        <div>
+          <label for="">Name of MDA*</label><br /><input
+            type="text"
+            placeholder="Enter the name of the MDA"
+            class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+          />
+        </div>
+
+        <div class="grid gap-4 mt-4 lgScreen:grid-cols-2">
+          <div>
+            <label for="">Industry*</label><br />
+            <select
+              name=""
+              id=""
+              class="w-full h-[40px] rounded-md px-3 text-lg border-[1px] mt-1 cursor-pointer"
+            >
+              <option value="">Select---</option>
+            </select>
+          </div>
+          <div>
+            <label for="">State*</label><br />
+            <select
+              name=""
+              id=""
+              class="w-full h-[40px] rounded-md px-3 text-lg border-[1px] mt-1 cursor-pointer"
+            >
+              <option value="">Select---</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Geographical Region*</label><br />
+            <select
+              name=""
+              id=""
+              class="w-full h-[40px] rounded-md px-3 text-lg border-[1px] mt-1 cursor-pointer"
+            >
+              <option value="">Select---</option>
+            </select>
+          </div>
+          <div>
+            <label for="">LGA*</label><br />
+            <select
+              name=""
+              id=""
+              class="w-full h-[40px] rounded-md px-3 text-lg border-[1px] mt-1 cursor-pointer"
+            >
+              <option value="">Select---</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <label for="">Address*</label><br /><input
+            type="text"
+            placeholder="Enter the contact address"
+            class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+          />
+        </div>
+        <div class="my-4">
+          <label for="">Email Address*</label><br /><input
+            type="text"
+            placeholder="Enter the email address"
+            class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+          />
+        </div>
+
+        <div class="grid gap-4 lgScreen:grid-cols-2">
+          <div>
+            <label for="">Contact*</label><br /><input
+              type="text"
+              placeholder="+234 0 000 0000"
+              class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+            />
+          </div>
+          <div>
+            <label for="">Status*</label><br /><select
+              name=""
+              id=""
+              class="w-full h-[40px] rounded-md px-2 border-[1px] mt-1"
+            >
+              <option value="">Select---</option>
+            </select>
+          </div>
+        </div>
+
+        <h3 class="mb-2 mt-5 font-semibold">Payment</h3>
+        <div class="gap-8 iPhone:flex">
+          <p class="flex gap-2">
+            <input
+              type="radio"
+              class="accent-[#1e39a6ff] scale-[1.50] cursor-pointer"
+            />
+            <label for="">Allow Payment</label>
+          </p>
+          <p class="flex gap-2 mt-2 iPhone:mt-0">
+            <input
+              type="radio"
+              checked
+              class="accent-[#1e39a6ff] scale-[1.50] cursor-pointer"
+            />
+            <label for="">Don't allow Payment</label>
+          </p>
+        </div>
+        <button
+          class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-lg w-full mt-6 text-lg"
+        >
+          Create MDA
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
