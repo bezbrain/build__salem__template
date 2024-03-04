@@ -235,18 +235,24 @@
             </div>
 
             <!-- Ministry of Agriculture table -->
-            <div class="w-full overflow-x-auto">
-            <table class="w-[800px] mt-4 bg-[#fff] border-2 rounded-lg lg:w-full">
+            <div class="w-full mt-6 overflow-x-auto">
+                <header class="flex gap-8">
+                    <button class="border-b-2 border-[#1e39a6ff] text-lg px-2">Approved Revenue Heads</button>
+                    <button class="text-lg">Approval requests</button>
+                </header>
+            <table class="w-[1200px] mt-2 bg-[#fff] border-2 rounded-lg mac:w-full">
             <thead>
               <tr class="text-left opacity-70 border-b-2">
                 <th class="p-4">
                     <i class="fa-solid fa-minus border-2 border-[#1e39a6ff] rounded-md text-[#1e39a6ff] text-sm px-[4px]"></i>
-                    <span>User ID</span>
+                    <span class="mx-2">S/N</span>
                     <i class="fa-solid fa-arrow-down text-sm"></i>
                 </th>
-                <th class="text-center">Name of User</th>
-                <th class="text-center">Subject</th>
-                <th class="text-center p-2">Date sent</th>
+                <th class="text-left">Revenue head</th>
+                <th class="text-center">Category </th>
+                <th class="text-center p-2">Frequency</th>
+                <th class="text-center p-2">Amount per head</th>
+                <th class="text-center p-2">Revenue generated</th>
                 <th class="text-center p-2">Status</th>
                 <th class="text-center p-2"></th>
               </tr>
@@ -256,91 +262,120 @@
               <tr class="text-center bg-[#f2f4f5ff]">
                 <td class="p-5 text-left">
                     <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
+                        <input type="checkbox" class="cursor-pointer mx-2">
+                        <label for="">1</label>
                     </span>
                 </td>
-                <td>David A.</td>
-                <td>Download error</td>
-                <td>08/03/2023</td>
+                <td class="text-left">REGISTRATION OF FISHING BOATS</td>
+                <td>Individual</td>
+                <td>One-off</td>
+                <td>N1,915.00</td>
+                <td>N10,000</td>
                 <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Answered</span>
+                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
                 </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
+                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
                 </td>
               </tr>
-              <tr class="text-center">
+              <tr class="text-center bg-[#fff]">
                 <td class="p-5 text-left">
                     <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
+                        <input type="checkbox" class="cursor-pointer mx-2">
+                        <label for="">2</label>
                     </span>
                 </td>
-                <td>Oluwakemi</td>
-                <td>Aceess error</td>
-                <td>08/03/2023</td>
+                <td class="text-left">REGISTRATION  OF FARMERS -RUBBER</td>
+                <td>Individual</td>
+                <td>One-off</td>
+                <td>N1,915.00</td>
+                <td>N10,000</td>
                 <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Answered</span>
+                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
                 </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
-                </td>
-              </tr>
-              <tr class="text-center bg-[#f2f4f5ff]">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
-                    </span>
-                </td>
-                <td>Bashir</td>
-                <td>Download error</td>
-                <td>08/03/2023</td>
-                <td class="">
-                    <span class="text-[#b82f25ff] bg-[#fff3f2ff] px-2 py-1 font-semibold rounded-xl">Pending</span>
-                </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
-                </td>
-              </tr>
-              <tr class="text-center">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
-                    </span>
-                </td>
-                <td>Ibrahim</td>
-                <td>Download error</td>
-                <td>08/03/2023</td>
-                <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Answered</span>
-                </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
+                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
                 </td>
               </tr>
               <tr class="text-center bg-[#f2f4f5ff]">
                 <td class="p-5 text-left">
                     <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
+                        <input type="checkbox" class="cursor-pointer mx-2">
+                        <label for="">3</label>
                     </span>
                 </td>
-                <td>Oluwafemi</td>
-                <td>Download error</td>
-                <td>08/03/2023</td>
+                <td class="text-left">REGISTRATION  OF FARMERS - COCOA</td>
+                <td>Individual</td>
+                <td>One-off</td>
+                <td>N1,915.00</td>
+                <td>N10,000</td>
                 <td class="">
-                    <span class="text-[#b82f25ff] bg-[#fff3f2ff] px-2 py-1 font-semibold rounded-xl">Pending</span>
+                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
                 </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
+                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
+                </td>
+              </tr>
+              <tr class="text-center bg-[#fff]">
+                <td class="p-5 text-left">
+                    <span>
+                        <input type="checkbox" class="cursor-pointer mx-2">
+                        <label for="">4</label>
+                    </span>
+                </td>
+                <td class="text-left">REGISTRATION  OF RICE FARMERS</td>
+                <td>Individual</td>
+                <td>One-off</td>
+                <td>N1,915.00</td>
+                <td>N10,000</td>
+                <td class="">
+                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
+                </td>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
+                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
+                </td>
+              </tr>
+              <tr class="text-center bg-[#f2f4f5ff]">
+                <td class="p-5 text-left">
+                    <span>
+                        <input type="checkbox" class="cursor-pointer mx-2">
+                        <label for="">5</label>
+                    </span>
+                </td>
+                <td class="text-left">TRACTOR HIRING SERVICE</td>
+                <td>Individual</td>
+                <td>One-off</td>
+                <td>N1,915.00</td>
+                <td>N10,000</td>
+                <td class="">
+                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
+                </td>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
+                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
+                </td>
+              </tr>
+              <tr class="text-center bg-[#fff]">
+                <td class="p-5 text-left">
+                    <span>
+                        <input type="checkbox" class="cursor-pointer mx-2">
+                        <label for="">6</label>
+                    </span>
+                </td>
+                <td class="text-left">LIVESTOCK SALES TAX</td>
+                <td>Individual</td>
+                <td>One-off</td>
+                <td>N1,915.00</td>
+                <td>N10,000</td>
+                <td class="">
+                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
+                </td>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
+                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="flex bg-white py-3 px-5 gap-4 w-[800px] lg:w-full">
+          <div class="flex bg-white py-3 px-5 gap-4 w-[1200px] mac:w-full">
               <button class="border-2 px-3 py-1 rounded-md">Previous</button>
               <button class="border-2 px-3 py-1 rounded-md">Next</button>
               <span class="ml-auto block">Page 1</span>
