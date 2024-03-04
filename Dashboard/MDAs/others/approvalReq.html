@@ -213,7 +213,7 @@
 
             <p class="mt-4 mb-2">Upload Excel template</p>
 
-            <div class="items-center gap-8 md:flex">
+            <div class="items-center gap-8 xxl:flex">
                 <label for="file" class="block flex items-center h-[40px] sm:w-[300px]">
                     <span class="pl-2 border-2 w-[60%] rounded-l-md py-1 cursor-pointer h-full">No file chosen</span>
                     <span class="bg-[#1e39a6ff] text-white py-1 rounded-r-md w-[40%] flex items-center justify-center border-[#1e39a6ff] cursor-pointer h-full iPhone:gap-2 iPhone:border-2">
@@ -221,14 +221,22 @@
                     </span>
                     <input type="file" id="file" class="hidden">
                 </label>
-                <div class="flex gap-4 mt-4 md:mt-0">
-                    <p class="flex gap-2">
-                        <input type="radio" checked class="accent-[#1e39a6ff] scale-[1.50] cursor-pointer">
+                <div class="gap-10 mt-4 xxl:mt-0 md:flex">
+                    <p class="flex items-center gap-4">
                         <label for="">Allow payment</label>
+                        <span class="flex items-center gap-2">
+                            Yes
+                            <i class="fa-solid fa-toggle-on text-[#1e39a6ff] text-2xl cursor-pointer"></i>
+                            No
+                        </span>
                     </p>
-                    <p class="flex gap-2">
-                        <input type="radio" class="accent-[#1e39a6ff] scale-[1.50] cursor-pointer">
-                        <label for="">Do not allow</label>
+                    <p class="flex items-center gap-4">
+                        <label for="">Allow Creation of offices</label>
+                        <span class="flex items-center gap-2">
+                            Yes
+                            <i class="fa-solid fa-toggle-on text-[#1e39a6ff] text-2xl cursor-pointer"></i>
+                            No
+                        </span>
                     </p>
                 </div>
             </div>
@@ -252,7 +260,6 @@
                 <th class="text-center">Category </th>
                 <th class="text-center p-2">Frequency</th>
                 <th class="text-center p-2">Amount per head</th>
-                <th class="text-center p-2">Revenue generated</th>
                 <th class="text-center p-2">Status</th>
                 <th class="text-center p-2"></th>
               </tr>
@@ -270,9 +277,8 @@
                 <td>Individual</td>
                 <td>One-off</td>
                 <td>N1,915.00</td>
-                <td>N10,000</td>
                 <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
+                    <span class="bg-[#f5efe1ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
                 </td>
                 <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
                 <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
@@ -285,89 +291,12 @@
                         <label for="">2</label>
                     </span>
                 </td>
-                <td class="text-left">REGISTRATION  OF FARMERS -RUBBER</td>
+                <td class="text-left">PROCESSING OF RICE</td>
                 <td>Individual</td>
                 <td>One-off</td>
                 <td>N1,915.00</td>
-                <td>N10,000</td>
                 <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
-                </td>
-                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
-                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
-                </td>
-              </tr>
-              <tr class="text-center bg-[#f2f4f5ff]">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer mx-2">
-                        <label for="">3</label>
-                    </span>
-                </td>
-                <td class="text-left">REGISTRATION  OF FARMERS - COCOA</td>
-                <td>Individual</td>
-                <td>One-off</td>
-                <td>N1,915.00</td>
-                <td>N10,000</td>
-                <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
-                </td>
-                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
-                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
-                </td>
-              </tr>
-              <tr class="text-center bg-[#fff]">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer mx-2">
-                        <label for="">4</label>
-                    </span>
-                </td>
-                <td class="text-left">REGISTRATION  OF RICE FARMERS</td>
-                <td>Individual</td>
-                <td>One-off</td>
-                <td>N1,915.00</td>
-                <td>N10,000</td>
-                <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
-                </td>
-                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
-                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
-                </td>
-              </tr>
-              <tr class="text-center bg-[#f2f4f5ff]">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer mx-2">
-                        <label for="">5</label>
-                    </span>
-                </td>
-                <td class="text-left">TRACTOR HIRING SERVICE</td>
-                <td>Individual</td>
-                <td>One-off</td>
-                <td>N1,915.00</td>
-                <td>N10,000</td>
-                <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
-                </td>
-                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
-                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
-                </td>
-              </tr>
-              <tr class="text-center bg-[#fff]">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer mx-2">
-                        <label for="">6</label>
-                    </span>
-                </td>
-                <td class="text-left">LIVESTOCK SALES TAX</td>
-                <td>Individual</td>
-                <td>One-off</td>
-                <td>N1,915.00</td>
-                <td>N10,000</td>
-                <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
+                    <span class="text-[#c7564eff] bg-[#fff3f2ff] px-2 py-1 font-semibold rounded-xl">Approved</span>
                 </td>
                 <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
                 <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
