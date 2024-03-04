@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mac: "1400px",
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Create Revenue Head Form</title>
+  </head>
+  <body>
+    <main class="min-h-[100vh] flex justify-center items-center py-12">
+      <form class="w-[800px] px-4">
+        <i
+          class="fa-solid fa-xmark text-right block text-4xl cursor-pointer"
+        ></i>
+        <h2 class="text-center font-semibold text-2xl">Create Revenue Head</h2>
+        <hr class="mt-2 mb-4" />
+        <div>
+          <label for="">Reveue Head*</label><br /><input
+            type="text"
+            placeholder="Enter the name"
+            class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+          />
+        </div>
+        <div class="mt-4">
+          <label for="">Frequency*</label><br /><select
+            name=""
+            id=""
+            class="w-full h-[40px] rounded-md px-2 border-[1px] mt-1"
+          >
+            <option value="">Select---</option>
+          </select>
+        </div>
+        <div class="mt-4">
+          <label for="">Amount to be paid*</label><br /><input
+            type="text"
+            placeholder="0.00"
+            class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+          />
+        </div>
+        <div class="mt-4">
+          <label for="">Due date*</label><br /><input
+            type="text"
+            placeholder="DD/MM/YYYY"
+            class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+          />
+        </div>
+        <div class="mt-4">
+          <label for="">Category*</label><br /><select
+            name=""
+            id=""
+            class="w-full h-[40px] rounded-md px-2 border-[1px] mt-1"
+          >
+            <option value="">Select---</option>
+          </select>
+        </div>
+
+        <h3 class="mb-2 mt-5 font-semibold">Payment method</h3>
+        <div class="gap-8 space-y-2 sm:flex sm:space-y-0">
+          <p class="flex gap-2">
+            <input
+              type="radio"
+              class="accent-[#1e39a6ff] scale-[1.50] cursor-pointer"
+            />
+            <label for="">Direct remittance</label>
+          </p>
+          <p class="flex gap-2">
+            <input
+              type="radio"
+              checked
+              class="accent-[#1e39a6ff] scale-[1.50] cursor-pointer"
+            />
+            <label for="">Split remittance</label>
+          </p>
+          <p>(Contact IT for split remittance)</p>
+        </div>
+        <button
+          class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-lg w-full mt-6 text-lg"
+        >
+          Create Revenue Head
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
