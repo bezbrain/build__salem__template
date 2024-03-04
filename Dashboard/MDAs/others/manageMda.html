@@ -12,6 +12,7 @@
       tailwind.config = {
         theme: {
           screens: {
+          mac: "1400px",
             xxl: "1300px",
             xl: "1024px",
             lgScreen: "950px",
@@ -185,122 +186,120 @@
           <div class="flex justify-between items-center my-4">
             <h2 class="text-xl font-semibold sm:text-3xl">MDAs</h2>
             <select class="px-2 py-1 rounded-md border-2 sm:px-4 sm:py-2">
-              <option value="">Create MDA User</option>
+              <option value="">Manage MDA User</option>
             </select>
           </div>
 
           <hr class="w-full mb-4" />
 
           <div class="">
-            <h2 class="text-2xl font-semibold my-4">Support</h2>
+            <h2 class="text-2xl font-semibold">Manage MDA User</h2>
 
             <!-- Support table -->
             <div class="w-full overflow-x-auto">
-            <table class="w-[800px] mt-4 bg-[#fff] border-2 rounded-lg lg:w-full">
+            <table class="w-[1200px] mt-4 bg-[#fff] border-2 rounded-lg text-sm mac:w-full">
             <thead>
               <tr class="text-left opacity-70 border-b-2">
                 <th class="p-4">
-                    <i class="fa-solid fa-minus border-2 border-[#1e39a6ff] rounded-md text-[#1e39a6ff] text-sm px-[4px]"></i>
-                    <span>User ID</span>
+                    <span>S/N</span>
                     <i class="fa-solid fa-arrow-down text-sm"></i>
                 </th>
-                <th class="text-center">Name of User</th>
-                <th class="text-center">Subject</th>
-                <th class="text-center p-2">Date sent</th>
-                <th class="text-center p-2">Status</th>
+                <th class="text-center">Avatar</th>
+                <th class="text-center">NAME</th>
+                <th class="text-center p-2">LAST LOGIN</th>
+                <th class="text-center p-2">EMAIL</th>
+                <th class="text-center p-2">Total payment</th>
+                <th class="text-center p-2">Invoice generated</th>
+                <th class="text-center p-2">ACCESS LEVEL</th>
+                <th class="text-center p-2">MANAGE</th>
                 <th class="text-center p-2"></th>
               </tr>
             </thead>
 
             <tbody>
               <tr class="text-center bg-[#f2f4f5ff]">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
-                    </span>
-                </td>
-                <td>David A.</td>
-                <td>Download error</td>
-                <td>08/03/2023</td>
-                <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Answered</span>
-                </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
-                </td>
-              </tr>
-              <tr class="text-center">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
-                    </span>
-                </td>
-                <td>Oluwakemi</td>
-                <td>Aceess error</td>
-                <td>08/03/2023</td>
-                <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Answered</span>
+                <td class="p-5 text-center">1</td>
+                <td><img src="../Avatar-one.png" alt="One" class="mx-auto"></td>
+                <td>Mior Zaki</td>
+                <td>10/02/2023 9.00AM</td>
+                <td class="">mior@gmail.com</td>
+                <td class="">N100,000</td>
+                <td class="">50</td>
+                <td class="text-[#027a48ff] font-semibold">Full access</td>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
+                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
                 </td>
                 <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
                 </td>
               </tr>
               <tr class="text-center bg-[#f2f4f5ff]">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
-                    </span>
-                </td>
-                <td>Bashir</td>
-                <td>Download error</td>
-                <td>08/03/2023</td>
-                <td class="">
-                    <span class="text-[#b82f25ff] bg-[#fff3f2ff] px-2 py-1 font-semibold rounded-xl">Pending</span>
-                </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
-                </td>
-              </tr>
-              <tr class="text-center">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
-                    </span>
-                </td>
-                <td>Ibrahim</td>
-                <td>Download error</td>
-                <td>08/03/2023</td>
-                <td class="">
-                    <span class="text-[#027a48ff] bg-[#ebfcf2ff] px-2 py-1 font-semibold rounded-xl">Answered</span>
+                <td class="p-5 text-center">2</td>
+                <td><img src="../Avatar-two.png" alt="One" class="mx-auto"></td>
+                <td>Jess Archer</td>
+                <td>10/02/2023 9.00AM</td>
+                <td class="">jess@gmail.com</td>
+                <td class="">N100,000</td>
+                <td class="">25</td>
+                <td class="text-[#e04f5dff] font-semibold">CMS</td>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
+                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
                 </td>
                 <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
                 </td>
               </tr>
               <tr class="text-center bg-[#f2f4f5ff]">
-                <td class="p-5 text-left">
-                    <span>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="">52166565161</label>
-                    </span>
-                </td>
-                <td>Oluwafemi</td>
-                <td>Download error</td>
-                <td>08/03/2023</td>
-                <td class="">
-                    <span class="text-[#b82f25ff] bg-[#fff3f2ff] px-2 py-1 font-semibold rounded-xl">Pending</span>
+                <td class="p-5 text-center">3</td>
+                <td><img src="../Avatar-three.png" alt="One" class="mx-auto"></td>
+                <td>Dries Vints</td>
+                <td>10/02/2023 9.00AM</td>
+                <td class="">dries@gmail.com</td>
+                <td class="">N100,000</td>
+                <td class="">15</td>
+                <td class="text-[#e04f5dff] font-semibold">CMS</td>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1 cursor-pointer"></i>
+                <i class="fa-solid fa-trash px-1 cursor-pointer"></i>
                 </td>
                 <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md">View</button>
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
+                </td>
+              </tr>
+              <tr class="text-center bg-[#f2f4f5ff]">
+                <td class="p-5 text-center">4</td>
+                <td><img src="../Avatar-four.png" alt="One" class="mx-auto"></td>
+                <td>Ian Landsman</td>
+                <td>10/02/2023 9.00AM</td>
+                <td class="">ian@gmail.com</td>
+                <td class="">N100,000</td>
+                <td class="">60</td>
+                <td class="text-[#e04f5dff] font-semibold">Reports, MDAs, Tax Payers</td>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1"></i>
+                <i class="fa-solid fa-trash px-1"></i>
+                </td>
+                <td class="pr-6">
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
+                </td>
+              </tr>
+              <tr class="text-center bg-[#f2f4f5ff]">
+                <td class="p-5 text-center">5</td>
+                <td><img src="../Avatar-five.png" alt="One" class="mx-auto"></td>
+                <td>Mohamed Sahad</td>
+                <td>10/02/2023 9.00AM</td>
+                <td class="">sahad@gmail.com</td>
+                <td class="">N100,000</td>
+                <td class="">30</td>
+                <td class="text-[#e04f5dff] font-semibold">Reports, MDAs, Tax Payers</td>
+                <td class="text-center"><i class="fa-regular fa-pen-to-square px-1"></i>
+                <i class="fa-solid fa-trash px-1"></i>
+                </td>
+                <td class="pr-6">
+                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="flex bg-white py-3 px-5 gap-4 w-[800px] lg:w-full">
+          <div class="flex bg-white py-3 px-5 gap-4 w-[1200px] mac:w-full">
               <button class="border-2 px-3 py-1 rounded-md">Previous</button>
               <button class="border-2 px-3 py-1 rounded-md">Next</button>
               <span class="ml-auto block">Page 1</span>
