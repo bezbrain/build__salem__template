@@ -1,0 +1,267 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f9fa] min-h-[100vh]">
+      <!-- Login Header -->
+      <header class="bg-white p-4 shadow-xl">
+        <section
+          class="max-w-[1400px] mx-auto items-center justify-between lgScreen:flex"
+        >
+          <img src="./Login-logo.png" alt="Login logo" />
+          <nav
+            class="w-[300px] absolute top-0 right-0 min-h-[100vh] bg-[#d2d6faff] z-10 lgScreen:min-h-fit lgScreen:w-auto lgScreen:static lgScreen:bg-inherit"
+          >
+            <ul
+              class="items-center mt-24 text-center space-y-4 lgScreen:space-x-8 lgScreen:flex lgScreen:mt-0 lgScreen:space-y-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
+              <li><a href="">E-Service</a></li>
+              <li><a href="">Tax Category</a></li>
+              <li>
+                <button
+                  class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md border-2 border-[#1e39a6ff]"
+                >
+                  Register as Taxpayer
+                </button>
+              </li>
+              <li>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] px-4 py-2 rounded-md font-semibold border-2 border-[#1e39a6ff]"
+                >
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <!-- Hero section -->
+      <section>
+        <div
+          style="background-image: url('./Hero\ Image.png')"
+          class="min-h-[100vh] bg-no-repeat bg-cover px-4 pt-16 surfaceDuo:pt-[8vw]"
+        >
+          <div class="w-fit mx-auto text-center">
+            <h2
+              class="text-white text-lg bg-[#5c5d69ff] w-fit mx-auto px-4 surfaceDuo:text-2xl"
+            >
+              PAY YOUR TAXES ONLINE
+            </h2>
+            <h1
+              class="text-white text-4xl bg-[#5c5d69ff] w-fit mx-auto px-4 py-2 my-4 surfaceDuo:text-5xl"
+            >
+              GET INCENTIVES
+            </h1>
+            <p
+              class="text-white text-md bg-[#5c5d69ff] w-fit mx-auto px-4 surfaceDuo:text-xl"
+            >
+              PAY ALL YOUR TAXES IN DUE TIME AND GET INCENTIVES.
+            </p>
+
+            <div class="my-4 relative bg-transparent">
+              <input
+                type="text"
+                placeholder="Search"
+                class="w-full bg-[#4a5566]/60 h-[45px] rounded-3xl px-10 text-[#cdd0d4] outline-none focus:border-[1px]"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass absolute left-4 top-[50%] translate-y-[-50%] text-[#cdd0d4]"
+              ></i>
+            </div>
+          </div>
+
+          <div class="max-w-[1200px] mx-auto mt-12">
+            <p class="text-white my-4 font-semibold">
+              Where do you want to start?
+            </p>
+
+            <div
+              class="grid iPhone:grid-cols-2 surfaceDuo:grid-cols-3 gap-2 surfaceDuo:gap-6 mx-auto lg:grid-cols-5"
+            >
+              <div class="w-full bg-white text-center rounded-lg p-8">
+                <i class="fa-solid fa-file-invoice text-5xl mb-4"></i>
+                <p class="font-semibold">Generate Invoice</p>
+              </div>
+              <div class="w-full bg-white text-center rounded-lg p-8">
+                <i class="fa-solid fa-file-invoice text-5xl mb-4"></i>
+                <p class="font-semibold">Verify Invoice/TCC</p>
+              </div>
+              <div class="w-full bg-white text-center rounded-lg p-8">
+                <i class="fa-solid fa-file-invoice text-5xl mb-4"></i>
+                <p class="font-semibold">Pay Now</p>
+              </div>
+              <div class="w-full bg-white text-center rounded-lg p-8">
+                <i class="fa-solid fa-file-invoice text-5xl mb-4"></i>
+                <p class="font-semibold">Self Services</p>
+              </div>
+              <div class="w-full bg-white text-center rounded-lg p-8">
+                <i class="fa-solid fa-file-invoice text-5xl mb-4"></i>
+                <p class="font-semibold">PAYE Manager</p>
+              </div>
+            </div>
+            <p class="text-white mt-[6vh] pb-[8vh]">
+              Official platform for <span class="font-semibold">Ondo IRS</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home body -->
+      <article class="">
+        <div class="max-w-[1400px] px-4 mx-auto my-16">
+          <h2 class="text-2xl font-semibold surfaceDuo:text-4xl">
+            Pay taxes easily, file returns instantly.
+          </h2>
+          <p class="mt-6 mb-4 max-w-[450px]">
+            Pay your taxes online, file them instantly and get your tax
+            certificate. All with just the click of a button. Pay all your taxes
+            in due time and get incentives.
+          </p>
+
+          <div class="flex gap-4">
+            <button
+              class="bg-[#1e39a6ff] text-white py-2 rounded-md flex items-center gap-2 px-4 lg:text-lg"
+            >
+              I want to pay Taxes
+            </button>
+            <button
+              class="bg-[#d2d6faff] py-2 rounded-md text-[#1e39a6ff] font-semibold px-4 lg:text-lg"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <div class="bg-white mb-16">
+        <div class="max-w-[1400px] mx-auto pt-12 pb-8 px-4">
+          <h3 class="text-[#1e39a6ff] font-semibold text-xl mb-6">Features</h3>
+          <p class="max-w-[400px] mb-4">
+            Here are some major services that make the each process easier.
+          </p>
+
+          <div
+            class="grid gap-2 iPhone:grid-cols-2 surfaceDuo:gap-6 mx-auto sm:grid-cols-3"
+          >
+            <div class="w-full bg-[#f7f9fa] rounded-lg py-8 px-4">
+              <h3 class="font-semibold text-[#1e39a6ff] mb-2">
+                Instant Payments
+              </h3>
+              <p class="">
+                Pay your taxes and get receipts Instantly, using the secure
+                e-payment channels.
+              </p>
+            </div>
+            <div class="w-full bg-[#f7f9fa] rounded-lg py-8 px-4">
+              <h3 class="font-semibold text-[#1e39a6ff] mb-2">
+                PAYE Management
+              </h3>
+              <p class="">
+                Easy PAYE registration. Add all your staffs, make payment and
+                manage your account.
+              </p>
+            </div>
+            <div class="w-full bg-[#f7f9fa] rounded-lg py-8 px-4">
+              <h3 class="font-semibold text-[#1e39a6ff] mb-2">
+                Filing Returns
+              </h3>
+              <p class="">
+                Securely and swiftly file Tax Returns from the comfort of your
+                home.
+              </p>
+            </div>
+            <div class="w-full bg-[#f7f9fa] rounded-lg py-8 px-4">
+              <h3 class="font-semibold text-[#1e39a6ff] mb-2">
+                Vehicle Registration
+              </h3>
+              <p class="">
+                Pay your vehicle registration and get receipt instantly.
+              </p>
+            </div>
+            <div class="w-full bg-[#f7f9fa] rounded-lg py-8 px-4">
+              <h3 class="font-semibold text-[#1e39a6ff] mb-2">Renew License</h3>
+              <p class="">
+                Pay for all your license renewal and get approved instantly.
+              </p>
+            </div>
+            <div class="w-full bg-[#f7f9fa] rounded-lg py-8 px-4">
+              <h3 class="font-semibold text-[#1e39a6ff] mb-2">
+                Get Incentives
+              </h3>
+              <p class="">
+                Pay all your taxes in time and earn point which you can use to
+                redeem gifts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="p-4 border-t-[2px]">
+        <div
+          class="max-w-[1400px] text-center mx-auto flex justify-between flex-col space-y-2 xl:flex-row xl:space-y-0"
+        >
+          <p class="">Copyright 2023 Endy Integrated Consultancy</p>
+
+          <div class="flex gap-8 w-fit mx-auto">
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">FAQ</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Contact us</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Tax Calculator</a>
+              </span>
+            </p>
+          </div>
+
+          <div class="flex gap-4 w-fit mx-auto xl:mx-0">
+            <span>Follow us on: </span>
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-x-twitter text-xl"></i>
+            <i class="fa-brands fa-linkedin text-xl"></i>
+            <i class="fa-brands fa-instagram text-xl"></i>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

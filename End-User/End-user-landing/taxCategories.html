@@ -1,0 +1,252 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f9fa] min-h-[100vh]">
+      <!-- Login Header -->
+      <header class="bg-white p-4 shadow-xl">
+        <section
+          class="max-w-[1400px] mx-auto items-center justify-between lgScreen:flex"
+        >
+          <img src="./Login-logo.png" alt="Login logo" />
+          <nav
+            class="w-[300px] absolute top-0 right-0 min-h-[100vh] bg-[#d2d6faff] z-10 lgScreen:min-h-fit lgScreen:w-auto lgScreen:static lgScreen:bg-inherit"
+          >
+            <ul
+              class="items-center mt-24 text-center space-y-4 lgScreen:space-x-8 lgScreen:flex lgScreen:mt-0 lgScreen:space-y-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
+              <li><a href="">E-Service</a></li>
+              <li><a href="">Tax Category</a></li>
+              <li>
+                <button
+                  class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md border-2 border-[#1e39a6ff]"
+                >
+                  Register as Taxpayer
+                </button>
+              </li>
+              <li>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] px-4 py-2 rounded-md font-semibold border-2 border-[#1e39a6ff]"
+                >
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <!-- Tax Categories section -->
+      <section>
+        <header class="bg-[#040d33] text-white py-10 px-4">
+          <h1 class="text-center text-3xl surfaceDuo:text-5xl">
+            Tax Categories
+          </h1>
+        </header>
+
+        <p class="py-4 px-4 border-b-[2px]">
+          <a href="">Home</a> <i class="fa-solid fa-arrow-right px-4"></i>
+          <span class="text-[#1e39a6ff]">Tax Categories</span>
+        </p>
+
+        <div class="max-w-[1400px] mx-auto px-4">
+          <div class="pb-20">
+            <h2 class="text-xl text-center mt-8 surfaceDuo:text-5xl">
+              Tax Categories
+            </h2>
+            <hr
+              class="mb-6 mt-2 h-[2px] bg-black w-[120px] mx-auto surfaceDuo:w-[170px]"
+            />
+            <p class="font-semibold mb-2">
+              TAXES COLLECTED BY FEDERAL GOVERNMENT
+            </p>
+            <ol class="list-decimal px-8">
+              <li>Companies Income Tax</li>
+              <li>
+                Withholding Tax on companies and residents of the Federal
+                Capital Territory and non-resident individuals
+              </li>
+              <li>Petroleum Profit Tax</li>
+              <li>Value Added Tax</li>
+              <li>Education Tax</li>
+              <li>
+                Capital Gains Tax on the residents of the Federal Capital
+                Territory, bodies corporate and non-resident individuals
+              </li>
+              <li>
+                Stamp Duties on bodies corporate and residents of the Federal
+                Capital Territory
+              </li>
+              <li>
+                Personal Income Tax in respect of: (a)Members of the Armed
+                Forces of the Federation (b)Members of the Nigerian Police Force
+                (c)Residents of the Federal Capital Territory (d)Staff of the
+                Ministry of Foreign Affairs and non-resident individuals
+              </li>
+              <li>National Information Technology Development Levy</li>
+            </ol>
+
+            <p class="mt-10 font-semibold mb-2">
+              TAXES COLLECTED BY FEDERAL GOVERNMENT
+            </p>
+            <ol class="list-decimal px-8">
+              <li>
+                Personal Income Tax in respect of individuals resident in the
+                State (a)Pay-As-You-Earn(PAYE) (b)Direct
+                Taxation(Self-Assessment)
+              </li>
+              <li>Withholding Tax (Individuals Only)</li>
+              <li>Capital Gains Tax (Individuals Only)</li>
+              <li>Stamp Duties on instrument executed by individuals</li>
+              <li>Pool and Betting, Lotteries Gaming and Casino Taxes</li>
+              <li>Road Taxes</li>
+              <li>
+                Business premises registration fee in respect of urban and rural
+                areas which includes registration fees and per annum for the
+                renewals as fixed by each state
+              </li>
+              <li>
+                Development Levy (individuals only) not more than 100 per annum
+                on all taxable individuals
+              </li>
+              <li>Naming of street registration fees in the State Capital</li>
+              <li>
+                Right of Occupancy fees on lands owned by the State Government
+                in urban areas of the State
+              </li>
+              <li>Market Taxes and Levies where State finance is involved</li>
+              <li>Land use Charge, where applicable</li>
+              <li>Entertainment Tax, where applicable</li>
+              <li>Environmental (Ecological) fee or levy</li>
+              <li>Mining, milling and quarrying fee, where applicable</li>
+              <li>
+                Hotel, Restaurant or Event Centre Consumption Tax, where
+                applicable
+              </li>
+              <li>Animal Trade Tax, where applicable</li>
+              <li>Produce Sales Tax, where applicable</li>
+              <li>Slaughter or Abattoir fees, where applicable</li>
+              <li>
+                Infrastructure Maintenance Charge or levy, where applicable
+              </li>
+              <li>Fire Service Charge</li>
+              <li>Property Tax, where applicable</li>
+              <li>Economic Development Levy, where applicable</li>
+              <li>Social Services Contribution Levy, where applicable</li>
+              <li>
+                Signage and Mobile Advertisement, jointly collected by the State
+                and Local Government
+              </li>
+            </ol>
+
+            <p class="mt-10 font-semibold mb-2">
+              TAXES AND LEVIES TO BE COLLECTED BY LOCAL GOVERNMENT
+            </p>
+            <ol class="list-decimal px-8">
+              <li>Shops and Kiosks rates</li>
+              <li>Tenement rates</li>
+              <li>Slaughter slab fees</li>
+              <li>Marriage, birth and death registration fees</li>
+              <li>
+                Naming of street registration fees, excluding any street in the
+                State Capital
+              </li>
+              <li>
+                Right of Occupancy fees on lands in the rural areas, excluding
+                those collectible by the Federal and State Governments.
+              </li>
+              <li>
+                Markets taxes and levies excluding any market where State
+                finance is involved
+              </li>
+              <li>Motor park levies</li>
+              <li>Domestic animal license fees</li>
+              <li>
+                Bicycle, truck canoe wheelbarrow and cart fees, other than a
+                mechanically propelled truck
+              </li>
+              <li>Cattle tax payable by cattle farmers only</li>
+              <li>Merriment and road closure</li>
+              <li>
+                Radio and television license fees (other than radio and
+                television transmitter)
+              </li>
+              <li>Vehicle radio license</li>
+              <li>Wrong parking charges</li>
+              <li>Public convenience, sewage and refuse disposal fees.</li>
+              <li>Customary burial grounds permit fees</li>
+              <li>Religious places establishment permit fees.</li>
+              <li>Signboard and Advertisement permit fees.</li>
+              <li>Wharf Landing Charge, where applicable</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <footer class="p-4 border-t-[2px]">
+        <div
+          class="max-w-[1400px] text-center mx-auto flex justify-between flex-col space-y-2 xl:flex-row xl:space-y-0"
+        >
+          <p class="">Copyright 2023 Endy Integrated Consultancy</p>
+
+          <div class="flex gap-8 w-fit mx-auto">
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">FAQ</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Contact us</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Tax Calculator</a>
+              </span>
+            </p>
+          </div>
+
+          <div class="flex gap-4 w-fit mx-auto xl:mx-0">
+            <span>Follow us on: </span>
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-x-twitter text-xl"></i>
+            <i class="fa-brands fa-linkedin text-xl"></i>
+            <i class="fa-brands fa-instagram text-xl"></i>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

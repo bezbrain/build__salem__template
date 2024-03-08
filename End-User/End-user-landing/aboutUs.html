@@ -1,0 +1,184 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f9fa] min-h-[100vh]">
+      <!-- Login Header -->
+      <header class="bg-white p-4 shadow-xl">
+        <section
+          class="max-w-[1400px] mx-auto items-center justify-between lgScreen:flex"
+        >
+          <img src="./Login-logo.png" alt="Login logo" />
+          <nav
+            class="w-[300px] absolute top-0 right-0 min-h-[100vh] bg-[#d2d6faff] z-10 lgScreen:min-h-fit lgScreen:w-auto lgScreen:static lgScreen:bg-inherit"
+          >
+            <ul
+              class="items-center mt-24 text-center space-y-4 lgScreen:space-x-8 lgScreen:flex lgScreen:mt-0 lgScreen:space-y-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
+              <li><a href="">E-Service</a></li>
+              <li><a href="">Tax Category</a></li>
+              <li>
+                <button
+                  class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md border-2 border-[#1e39a6ff]"
+                >
+                  Register as Taxpayer
+                </button>
+              </li>
+              <li>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] px-4 py-2 rounded-md font-semibold border-2 border-[#1e39a6ff]"
+                >
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <!-- About body section -->
+      <section>
+        <header class="bg-[#040d33] text-white py-10 px-4">
+          <h1 class="text-center text-4xl">About Us</h1>
+        </header>
+
+        <p class="py-4 px-4 border-b-[2px]">
+          <a href="">Home</a> <i class="fa-solid fa-arrow-right px-4"></i>
+          <span class="text-[#1e39a6ff]">About us</span>
+        </p>
+
+        <div
+          class="max-w-[1400px] mx-auto px-4 text-center surfaceDuo:text-left"
+        >
+          <div>
+            <h2 class="text-xl text-center mt-8 surfaceDuo:text-3xl">
+              About Endy Integrated Consultancy
+            </h2>
+            <hr
+              class="mb-6 h-[2px] bg-black w-[100px] mx-auto surfaceDuo:w-[140px]"
+            />
+            <p>
+              At Endy Integrated Consultancy, we stand as a beacon of
+              comprehensive solutions, driven by innovation and a commitment to
+              excellence. With a fervent belief in the power of strategic
+              guidance and practical implementation, we cater to diverse needs
+              across industries, providing tailored consultancy services that
+              empower businesses to thrive in an ever-evolving landscape.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-xl text-center mt-8 surfaceDuo:text-3xl">
+              Our Vision
+            </h2>
+            <hr
+              class="mb-6 h-[2px] bg-black w-[100px] mx-auto surfaceDuo:w-[140px]"
+            />
+            <p>
+              Our vision is simple yet profound: to be the catalyst for
+              transformative growth and sustainable success for our clients. We
+              envision a future where businesses harness their full potential,
+              leveraging our expertise to navigate challenges, seize
+              opportunities, and realize their aspirations.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-xl text-center mt-8 surfaceDuo:text-3xl">
+              Who We Are
+            </h2>
+            <hr
+              class="mb-6 h-[2px] bg-black w-[100px] mx-auto surfaceDuo:w-[140px]"
+            />
+            <p>
+              We are a team of passionate professionals, each an expert in our
+              respective fields, united by the common goal of delivering
+              exceptional value. Our multidisciplinary approach allows us to
+              offer a wide spectrum of consultancy services, ranging from
+              strategic planning and operational optimization to digital
+              transformation and beyond.
+            </p>
+          </div>
+          <div class="pb-20">
+            <h2 class="text-xl text-center mt-8 surfaceDuo:text-3xl">
+              What Sets Us Apart
+            </h2>
+            <hr
+              class="mb-6 h-[2px] bg-black w-[100px] mx-auto surfaceDuo:w-[140px]"
+            />
+            <p>
+              What truly sets us apart is our unwavering dedication to
+              understanding our clients' unique needs. We don't just provide
+              off-the-shelf solutions; instead, we delve deep into the
+              intricacies of each situation, crafting bespoke strategies that
+              align with specific goals and drive tangible, measurable results.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="p-4 border-t-[2px]">
+        <div
+          class="max-w-[1400px] text-center mx-auto flex justify-between flex-col space-y-2 xl:flex-row xl:space-y-0"
+        >
+          <p class="">Copyright 2023 Endy Integrated Consultancy</p>
+
+          <div class="flex gap-8 w-fit mx-auto">
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">FAQ</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Contact us</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Tax Calculator</a>
+              </span>
+            </p>
+          </div>
+
+          <div class="flex gap-4 w-fit mx-auto xl:mx-0">
+            <span>Follow us on: </span>
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-x-twitter text-xl"></i>
+            <i class="fa-brands fa-linkedin text-xl"></i>
+            <i class="fa-brands fa-instagram text-xl"></i>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
