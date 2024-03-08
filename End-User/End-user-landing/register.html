@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            lgScreen: "950px",
+            md: "768px",
+            sm: "640px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f9faff] min-h-[100vh]">
+      <form class="min-h-[85vh] flex items-center justify-center px-4 py-24">
+        <section
+          class="max-w-[600px] border-2 rounded-lg px-[10vw] py-[7vh] bg-white md:px-24"
+        >
+          <h1 class="text-center text-xl mb-2 sm:text-3xl">
+            You do not have an account!
+          </h1>
+          <h2 class="text-center font-semibold text-xl sm:text-3xl">
+            Please Log in
+          </h2>
+
+          <hr class="mb-8 mt-2" />
+
+          <div class="space-y-4">
+            <div>
+              <label for="">Email address*</label>
+              <br /><input
+                type="text"
+                placeholder="Enter your email"
+                class="h-[40px] rounded-md w-full border-[1px] pl-3 mt-1"
+              />
+            </div>
+            <div>
+              <label for="">Password*</label>
+              <br /><input
+                type="text"
+                placeholder="Enter your password"
+                class="h-[40px] rounded-md w-full border-[1px] pl-3 mt-1"
+              />
+            </div>
+          </div>
+
+          <div class="flex justify-between my-4">
+            <div>
+              <input type="checkbox" />
+              <label for="" class="text-sm sm:text-lg">Remember me</label>
+            </div>
+            <button
+              class="text-[#1e39a6ff] font-semibold underline text-sm sm:text-lg"
+            >
+              Forget password?
+            </button>
+          </div>
+
+          <button
+            class="bg-[#d2d6fa] w-full text-[#1e39a6ff] py-2 rounded-md text-lg font-semibold hover:scale-105"
+          >
+            Login
+          </button>
+
+          <p class="text-sm text-center mt-4">
+            By selecting login, you agree with our terms and have read our and
+            acknowledged our Global privacy statement.
+          </p>
+
+          <div class="flex items-center space-x-4 mt-5 mb-3">
+            <span class="bg-slate-300 h-[2px] w-full block"></span>
+            <span>or</span>
+            <span class="bg-slate-300 h-[2px] w-full block"></span>
+          </div>
+
+          <p class="text-center mb-4">New to EIC?</p>
+
+          <button
+            class="bg-[#1e39a6ff] w-full text-white py-2 rounded-md text-lg hover:scale-105"
+          >
+            Register
+          </button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

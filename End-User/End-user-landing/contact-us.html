@@ -1,0 +1,232 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f9fa] min-h-[100vh]">
+      <!-- Login Header -->
+      <header class="bg-white p-4 shadow-xl">
+        <section
+          class="max-w-[1400px] mx-auto items-center justify-between lgScreen:flex"
+        >
+          <img src="./Login-logo.png" alt="Login logo" />
+          <nav
+            class="w-[300px] absolute top-0 right-0 min-h-[100vh] bg-[#d2d6faff] z-10 lgScreen:min-h-fit lgScreen:w-auto lgScreen:static lgScreen:bg-inherit"
+          >
+            <ul
+              class="items-center mt-24 text-center space-y-4 lgScreen:space-x-8 lgScreen:flex lgScreen:mt-0 lgScreen:space-y-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
+              <li><a href="">E-Service</a></li>
+              <li><a href="">Tax Category</a></li>
+              <li>
+                <button
+                  class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md border-2 border-[#1e39a6ff]"
+                >
+                  Register as Taxpayer
+                </button>
+              </li>
+              <li>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] px-4 py-2 rounded-md font-semibold border-2 border-[#1e39a6ff]"
+                >
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <!-- Tax Categories section -->
+      <section>
+        <header class="bg-[#040d33] text-white py-10 px-4">
+          <h1 class="text-center text-3xl surfaceDuo:text-5xl">Contact Us</h1>
+        </header>
+
+        <p class="py-4 px-4 border-b-[2px]">
+          <a href="">Home</a> <i class="fa-solid fa-arrow-right px-4"></i>
+          <span class="text-[#1e39a6ff]">Contact Us</span>
+        </p>
+
+        <div class="max-w-[1400px] mx-auto px-4">
+          <!-- Header -->
+          <div class="pb-20">
+            <h2 class="text-xl text-center sm:text-3xl mt-8 xl:text-5xl">
+              Get in touch with us
+            </h2>
+            <hr
+              class="my-4 h-[3px] bg-[#1e39a6ff] w-[120px] mx-auto sm:w-[200px]"
+            />
+            <p class="text-center max-w-[700px] mx-auto">
+              Contact us today for all inquiries and support issues, and we are
+              happy to provide you with 24/7 premium customer service.
+            </p>
+          </div>
+
+          <!-- Form Container -->
+          <div
+            class="gap-6 border-2 rounded-xl pt-6 pb-12 px-3 mb-12 iphone:px-6 sm:flex"
+          >
+            <div class="w-full sm:w-1/2">
+              <h3>BLOCK A 430 , KINGS PARK ESTATE, KUKWABA DISTRICT, ABUJA</h3>
+
+              <div class="flex items-center gap-4 mt-10">
+                <i
+                  class="fa-solid fa-location-dot bg-[#1e39a6ff] text-white text-2xl px-4 py-2 rounded-lg"
+                ></i>
+                <p>
+                  <span>Visit our office:</span>
+                  <br /><span class="font-semibold"
+                    >Block A430, Kings Park Estate, <br />Kukwaba District,
+                    Abuja</span
+                  >
+                </p>
+              </div>
+              <div class="flex items-center gap-4 mt-12">
+                <i
+                  class="fa-regular fa-envelope bg-[#1e39a6ff] text-white text-2xl px-4 py-2 rounded-lg"
+                ></i>
+                <p>
+                  <span>Send us an email:</span>
+                  <br /><span class="font-semibold">info@endyIC.com</span>
+                </p>
+              </div>
+              <div class="flex items-center gap-4 mt-12">
+                <i
+                  class="fa-solid fa-phone bg-[#1e39a6ff] text-white text-2xl px-4 py-2 rounded-lg"
+                ></i>
+                <p>
+                  <span>Phone Number</span>
+                  <br /><span class="font-semibold">070-774-634-8243</span>
+                </p>
+              </div>
+
+              <div class="flex gap-6 w-fit mt-10">
+                <i class="fa-brands fa-facebook text-3xl"></i>
+                <i class="fa-brands fa-x-twitter text-3xl"></i>
+                <i class="fa-brands fa-linkedin text-3xl"></i>
+                <i class="fa-brands fa-instagram text-3xl"></i>
+              </div>
+            </div>
+
+            <form class="w-full sm:w-1/2">
+              <div class="my-8">
+                <h3 class="text-xl">Send us a message</h3>
+                <p class="text-lg">We provide the best service</p>
+              </div>
+
+              <div class="grid gap-4 lgScreen:grid-cols-2">
+                <div>
+                  <label for="">Name*</label><br /><input
+                    type="text"
+                    placeholder="David"
+                    class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+                  />
+                </div>
+                <div>
+                  <label for="">Email*</label><br /><input
+                    type="text"
+                    placeholder="davida@gmail.com "
+                    class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1"
+                  />
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <label for="">Subject*</label><br /><select
+                  type="text"
+                  placeholder="Access error"
+                  class="w-full h-[40px] rounded-md px-4 text-lg border-[1px] mt-1 opacity-70"
+                >
+                  <option value="">Payment Error</option>
+                </select>
+              </div>
+
+              <div class="mt-4">
+                <label for="">Message*</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="3"
+                  placeholder="David"
+                  class="w-full border-[1px] rounded-md mt-1 py-2 px-4"
+                ></textarea>
+              </div>
+              <button
+                class="bg-[#1e39a6ff] text-white py-2 px-6 rounded-md mt-4 text-lg"
+              >
+                <span class="mr-2">Send</span>
+                <i class="fa-regular fa-share-from-square"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="p-4 border-t-[2px]">
+        <div
+          class="max-w-[1400px] text-center mx-auto flex justify-between flex-col space-y-2 xl:flex-row xl:space-y-0"
+        >
+          <p class="">Copyright 2023 Endy Integrated Consultancy</p>
+
+          <div class="flex gap-8 w-fit mx-auto">
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">FAQ</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Contact us</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Tax Calculator</a>
+              </span>
+            </p>
+          </div>
+
+          <div class="flex gap-4 w-fit mx-auto xl:mx-0">
+            <span>Follow us on: </span>
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-x-twitter text-xl"></i>
+            <i class="fa-brands fa-linkedin text-xl"></i>
+            <i class="fa-brands fa-instagram text-xl"></i>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

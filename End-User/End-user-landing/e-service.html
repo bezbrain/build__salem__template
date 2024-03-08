@@ -1,0 +1,173 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f9fa] min-h-[100vh]">
+      <!-- Login Header -->
+      <header class="bg-white p-4 shadow-xl">
+        <section
+          class="max-w-[1400px] mx-auto items-center justify-between lgScreen:flex"
+        >
+          <img src="./Login-logo.png" alt="Login logo" />
+          <nav
+            class="w-[300px] absolute top-0 right-0 min-h-[100vh] bg-[#d2d6faff] z-10 lgScreen:min-h-fit lgScreen:w-auto lgScreen:static lgScreen:bg-inherit hidden"
+          >
+            <ul
+              class="items-center mt-24 text-center space-y-4 lgScreen:space-x-8 lgScreen:flex lgScreen:mt-0 lgScreen:space-y-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
+              <li><a href="">E-Service</a></li>
+              <li><a href="">Tax Category</a></li>
+              <li>
+                <button
+                  class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md border-2 border-[#1e39a6ff]"
+                >
+                  Register as Taxpayer
+                </button>
+              </li>
+              <li>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] px-4 py-2 rounded-md font-semibold border-2 border-[#1e39a6ff]"
+                >
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <!-- Tax Categories section -->
+      <section>
+        <header class="bg-[#040d33] text-white py-10 px-4">
+          <h1 class="text-center text-3xl surfaceDuo:text-5xl">E-Services</h1>
+        </header>
+
+        <p class="py-4 px-4 border-b-[2px]">
+          <a href="">Home</a> <i class="fa-solid fa-arrow-right px-4"></i>
+          <span class="text-[#1e39a6ff]">E-Services</span>
+        </p>
+
+        <div class="max-w-[1400px] mx-auto px-4">
+          <!-- Header -->
+          <div class="pb-4">
+            <h2 class="text-xl text-center sm:text-3xl mt-8 xl:text-3xl">
+              Check application status
+            </h2>
+            <p class="text-center my-2">Input your reference number to check your application status</p>
+          </div>
+
+          <!-- E-services -->
+          <div
+            class="mb-48 max-w-[480px] mx-auto"
+          >
+            <div class="flex gap-1 mx-auto surfaceDuo:gap-4">
+                <input type="text" placeholder="EIC" class="h-[45px] rounded-3xl border-[1px] w-[65%] px-4">
+                <button
+                  class="bg-[#1e39a6ff] text-white w-[35%] rounded-md border-2 border-[#1e39a6ff] px-1"
+                >
+                  Check Status
+                </button>
+            </div>
+
+            <div class="px-4 mt-8 mx-auto">
+                <h2 class="text-2xl font-semibold mb-4">E-Services</h2>
+                
+        <div
+          class="mb-20 flex gap-6 justify-center flex-wrap"
+        >
+          <div
+            class="w-full bg-[#f7f9fa] rounded-lg text-center border-[1px] py-6 iPhone:w-[130px]"
+          >
+          <i
+              class="fa-solid fa-camera-retro py-1 px-2 text-3xl text-[#1e39a6ff]"
+            ></i>
+           <p>Tax Filling</p>
+          </div>
+          <div
+            class="w-full bg-[#f7f9fa] rounded-lg text-center border-[1px] py-6 iPhone:w-[130px]"
+          >
+          <i
+              class="fa-solid fa-camera-retro py-1 px-2 text-3xl text-[#1e39a6ff]"
+            ></i>
+           <p>TIN Request</p>
+          </div>
+          <div
+            class="w-full bg-[#f7f9fa] rounded-lg text-center border-[1px] py-6 iPhone:w-[130px]"
+          >
+          <i
+              class="fa-solid fa-camera-retro py-1 px-2 text-3xl text-[#1e39a6ff]"
+            ></i>
+           <p>Tax Clearance Certificate</p>
+          </div>
+        </div>
+            </div>
+        </div>
+      </section>
+
+      <footer class="p-4 border-t-[2px]">
+        <div
+          class="max-w-[1400px] text-center mx-auto flex justify-between flex-col space-y-2 xl:flex-row xl:space-y-0"
+        >
+          <p class="">Copyright 2023 Endy Integrated Consultancy</p>
+
+          <div class="flex gap-8 w-fit mx-auto">
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">FAQ</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Contact us</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Tax Calculator</a>
+              </span>
+            </p>
+          </div>
+
+          <div class="flex gap-4 w-fit mx-auto xl:mx-0">
+            <span>Follow us on: </span>
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-x-twitter text-xl"></i>
+            <i class="fa-brands fa-linkedin text-xl"></i>
+            <i class="fa-brands fa-instagram text-xl"></i>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
