@@ -2,16 +2,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../company.css" />
     <link rel="stylesheet" href="../company-sidebar.css" />
-    <title>Basic Information</title>
+    <title>Company Information</title>
   </head>
   <body>
     <main class="basic__main__page">
       <aside class="sidebar">
         <!-- Logo -->
         <a href="">
-          <img src="../../logo/Logo.png" alt="Logo" />
+          <img src="../../images/Login-logo.png" alt="Logo" />
         </a>
         <!-- Aside items -->
         <ul class="sidebar__unordered">
@@ -49,24 +53,54 @@
       <!-- Form fields -->
       <section class="form__container">
         <hr class="horizontal__line" />
-        <a href="" class="go__back">Go back</a>
+        <a href="" class="go__back"
+          ><span><i class="fa-solid fa-arrow-left"></i></span
+          ><span>Go back</span></a
+        >
 
         <form class="form">
-          <h2>Company Representative</h2>
-          <h4>Please enter company representative details</h4>
+          <h2>Register</h2>
+          <h4>Company Information</h4>
 
           <div class="fields__container">
             <div>
-              <label for="">First name*</label><br /><input
+              <label for="">Tax Category*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Name of Organization**</label><br /><input
                 type="text"
-                placeholder="Enter first name here"
+                placeholder="Enter organization name here*"
                 class="input__box"
               />
             </div>
             <div>
-              <label for="">Surname*</label><br /><input
+              <label for="">Industry*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">No of staff*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">TIN (Optional)</label><br /><input
                 type="text"
-                placeholder="Enter surname here"
+                placeholder="Enter your TIN"
                 class="input__box"
               />
             </div>
@@ -78,30 +112,7 @@
               />
             </div>
             <div>
-              <label for="">Phone number*</label><br /><input
-                type="text"
-                placeholder="Enter phone number here"
-                class="input__box"
-              />
-            </div>
-            <div>
-              <label for="">ID Type*</label><br /><select
-                name=""
-                id=""
-                class="select__box"
-              >
-                <option value="">Select---</option>
-              </select>
-            </div>
-            <div>
-              <label for="">ID Number</label><br /><input
-                type="text"
-                placeholder="Input ID number"
-                class="input__box"
-              />
-            </div>
-            <div>
-              <label for="">Position*</label><br /><select
+              <label for="">LGA*</label><br /><select
                 name=""
                 id=""
                 class="select__box"
@@ -115,11 +126,11 @@
                 id=""
                 class="select__box"
               >
-                <option value="">Plateau</option>
+                <option value="">Akwa Ibom</option>
               </select>
             </div>
             <div>
-              <label for="">LGA*</label><br /><select
+              <label for="">Area*</label><br /><select
                 name=""
                 id=""
                 class="select__box"

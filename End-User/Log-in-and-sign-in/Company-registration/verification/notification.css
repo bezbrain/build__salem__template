@@ -36,6 +36,9 @@
 .email__btn:hover {
   transform: scale(1.05);
 }
+.email__btn > span {
+  margin-inline: 8px;
+}
 
 .phone__btn {
   background-color: #fff;
@@ -49,4 +52,7 @@
 }
 .phone__btn:hover {
   transform: scale(1.05);
+}
+.phone__btn > span {
+  margin-inline: 8px;
 }

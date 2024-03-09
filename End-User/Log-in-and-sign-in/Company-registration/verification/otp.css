@@ -1,5 +1,6 @@
 .form__container {
   width: 80%;
+  /* text-align: center; */
 }
 
 .verification__container {
@@ -9,7 +10,7 @@
 }
 
 .verification__container > p {
-  margin-block: 1.5rem;
+  margin-block: 2rem;
 }
 
 .notification__btns {
@@ -23,6 +24,16 @@
   }
 }
 
+.otp__input {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding-inline: 1rem;
+  font-size: 1rem;
+  margin-block: 1rem;
+}
+
 .email__btn {
   background-color: #1e39a6ff;
   color: #fff;
@@ -30,23 +41,22 @@
   border-radius: 5px;
   width: 50%;
   padding-block: 10px;
+  margin-block: 2rem;
   font-size: 1rem;
   cursor: pointer;
 }
 .email__btn:hover {
   transform: scale(1.05);
 }
-
-.phone__btn {
-  background-color: #fff;
-  color: #1e39a6ff;
-  border: 1px solid #1e39a6ff;
-  border-radius: 5px;
-  width: 50%;
-  padding-block: 10px;
-  font-size: 1rem;
-  cursor: pointer;
+.email__btn > span {
+  margin-inline: 8px;
 }
-.phone__btn:hover {
-  transform: scale(1.05);
+
+.resend,
+.method {
+  color: #1e39a6ff;
+  border: none;
+  background-color: inherit;
+  text-decoration: underline;
+  font-size: 1rem;
 }

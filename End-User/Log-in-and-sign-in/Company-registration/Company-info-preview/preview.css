@@ -27,6 +27,8 @@
   font-size: 1rem;
   cursor: pointer;
   margin-right: 1rem;
+  display: flex;
+  gap: 8px;
 }
 .header__btns > button:last-child:hover {
   transform: scale(1.05);

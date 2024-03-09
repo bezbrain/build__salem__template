@@ -2,8 +2,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../individual.css" />
-    <link rel="stylesheet" href="../sidebar.css" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../company.css" />
+    <link rel="stylesheet" href="../company-sidebar.css" />
     <link rel="stylesheet" href="./notification.css" />
     <title>Verification</title>
   </head>
@@ -12,29 +16,22 @@
       <aside class="sidebar">
         <!-- Logo -->
         <a href="">
-          <img src="../../logo/Logo.png" alt="Logo" />
+          <img src="../../images/Login-logo.png" alt="Logo" />
         </a>
         <!-- Aside items -->
         <ul class="sidebar__unordered">
           <li>
             <span class="aside__checked"></span
             ><a href=""
-              ><h4>Category</h4>
-              <span>Please select your category</span></a
+              ><h4>Company Information</h4>
+              <span>Please enter company details</span></a
             >
           </li>
           <li>
             <span class="aside__checked"></span
             ><a href=""
-              ><h4>Basic Information</h4>
-              <span>Please enter taxpayer details</span></a
-            >
-          </li>
-          <li>
-            <span class="aside__checked"></span
-            ><a href=""
-              ><h4>Business Information</h4>
-              <span>Please enter Business information</span></a
+              ><h4>Company Representative</h4>
+              <span>Please enter company rep. details</span></a
             >
           </li>
           <li>
@@ -65,8 +62,13 @@
             preferred method of verification
           </p>
           <div class="notification__btns">
-            <button class="email__btn">Email verification</button>
-            <button class="phone__btn">Phone verification</button>
+            <button class="email__btn">
+              <i class="fa-regular fa-envelope"></i
+              ><span>Email verification</span>
+            </button>
+            <button class="phone__btn">
+              <i class="fa-solid fa-phone"></i><span>Phone verification</span>
+            </button>
           </div>
         </div>
       </section>
