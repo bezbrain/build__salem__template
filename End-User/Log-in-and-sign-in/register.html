@@ -1,0 +1,208 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Register</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f9faff] min-h-[100vh]">
+      <!-- Header -->
+      <header class="bg-white p-4">
+        <section
+          class="w-full mx-auto shadow-lg items-center justify-between xl:flex"
+        >
+          <a href="" class="w-[130px] pb-2 block">
+            <img src="./images/Login-logo.png" alt="Login logo" />
+          </a>
+          <nav
+            class="w-[300px] absolute top-0 z-20 pb-4 right-0 min-h-[100vh] bg-[#d2d6faff] xl:min-h-fit xl:w-auto xl:static xl:bg-inherit"
+          >
+            <ul
+              class="items-center mt-24 text-center space-y-4 xl:space-x-8 xl:flex xl:mt-0 xl:space-y-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
+              <li><a href="">E-Service</a></li>
+              <li><a href="">Tax Category</a></li>
+              <li>
+                <button
+                  class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md border-2 border-[#1e39a6ff]"
+                >
+                  Register as Taxpayer
+                </button>
+              </li>
+              <li>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] px-4 py-2 rounded-md font-semibold border-2 border-[#1e39a6ff]"
+                >
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <section
+        class="bg-[#f7f5f5ff] min-h-[100vh] gap-8 flex relative lg:gap-12 lgScreen:gap-20"
+      >
+        <!-- Aside bar -->
+        <aside
+          class="bg-white w-[70px] p-4 z-10 lgScreen:w-[300px] lg:w-[350px]"
+        >
+          <!-- Aside items -->
+          <ul class="mt-12 mb-8">
+            <li class="mb-[20px] flex items-center gap-4 cursor-pointer">
+              <span
+                class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
+              ></span
+              ><a href="" class="hidden lg:inline"
+                ><h4 class="font-semibold">Category</h4>
+                <span class="text-[13px]">Please select your category</span></a
+              >
+            </li>
+            <li class="mb-[20px] flex items-center gap-4 cursor-pointer">
+              <span
+                class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
+              ></span
+              ><a href="" class="hidden lg:inline"
+                ><h4 class="font-semibold">Basic Information</h4>
+                <span class="text-[13px]">Please enter your details</span></a
+              >
+            </li>
+            <li class="mb-[20px] flex items-center gap-4 cursor-pointer">
+              <span
+                class="w-[25px] h-[25px] border-[2px] border-[#1e39a6ff] block rounded-full"
+              ></span
+              ><a href="" class="hidden lg:inline"
+                ><h4 class="font-semibold">Choose a password</h4>
+                <span class="text-[13px]">Choose a secure password</span></a
+              >
+            </li>
+          </ul>
+        </aside>
+
+        <div class="w-full lg:w-[60%]">
+          <h2 class="text-center mt-[6vw] text-4xl font-semibold">Register</h2>
+          <p class="text-center text-2xl font-semibold my-8">
+            Select your category
+          </p>
+          <div
+            class="max-w-[800px] h-fit mx-auto px-4 mb-20 flex gap-4 justify-center flex-wrap"
+          >
+            <div
+              class="w-full bg-[#f7f9fa] rounded-lg text-center border-[2px] py-4 px-2 surfaceDuo:w-[300px]"
+            >
+              <img
+                src="./images/individual.png"
+                alt="individual"
+                class="mx-auto"
+              />
+              <h3 class="font-semibold mt-2 mb-2 text-lg">Individual</h3>
+              <p class="">
+                These are individuals who are required to pay taxes on their
+                personal income, such as salary, freelance work, rental income,
+                etc.
+              </p>
+            </div>
+            <div
+              class="w-full bg-[#f7f9fa] rounded-lg text-center border-[2px] py-4 px-2 surfaceDuo:w-[300px]"
+            >
+              <img
+                src="./images/corporate.png"
+                alt="corporate"
+                class="mx-auto"
+              />
+              <h3 class="font-semibold mt-2 mb-2 text-lg">Corporate</h3>
+              <p class="">
+                These are businesses, including corporations and limited
+                liability companies, that are required to pay taxes on their
+                profits.
+              </p>
+            </div>
+            <div
+              class="w-full bg-[#f7f9fa] rounded-lg text-center border-[2px] py-4 px-2 surfaceDuo:w-[300px]"
+            >
+              <img src="./images/state.png" alt="state" class="mx-auto" />
+              <h3 class="font-semibold mt-2 mb-2 text-lg">State Agency</h3>
+              <p class="">
+                These are government agencies and departments at the state level
+                that are responsible for paying taxes on their operations.
+              </p>
+            </div>
+            <div
+              class="w-full bg-[#f7f9fa] rounded-lg text-center border-[2px] py-4 px-2 surfaceDuo:w-[300px]"
+            >
+              <img src="./images/state.png" alt="state" class="mx-auto" />
+              <h3 class="font-semibold mt-2 mb-2 text-lg">Federal Agency</h3>
+              <p class="">
+                These are government agencies and departments at the federal
+                level that are responsible for paying taxes on their operations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="p-4 border-t-[2px]">
+        <div
+          class="max-w-[1400px] text-center mx-auto flex justify-between flex-col space-y-2 xl:flex-row xl:space-y-0"
+        >
+          <p class="">Copyright 2023 Endy Integrated Consultancy</p>
+
+          <div class="flex gap-8 w-fit mx-auto">
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">FAQ</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Contact us</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Tax Calculator</a>
+              </span>
+            </p>
+          </div>
+
+          <div class="flex gap-4 w-fit mx-auto xl:mx-0">
+            <span>Follow us on: </span>
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-x-twitter text-xl"></i>
+            <i class="fa-brands fa-linkedin text-xl"></i>
+            <i class="fa-brands fa-instagram text-xl"></i>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -2,16 +2,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../individual.css" />
     <link rel="stylesheet" href="../sidebar.css" />
-    <title>Business Information</title>
+    <link rel="stylesheet" href="./otp.css" />
+    <title>Verification</title>
   </head>
   <body>
     <main class="basic__main__page">
       <aside class="sidebar">
         <!-- Logo -->
         <a href="">
-          <img src="../../logo/Logo.png" alt="Logo" />
+          <img src="../Logo.png" alt="Logo" />
         </a>
         <!-- Aside items -->
         <ul class="sidebar__unordered">
@@ -56,49 +61,19 @@
       <!-- Form fields -->
       <section class="form__container">
         <hr class="horizontal__line" />
-        <a href="" class="go__back">Go back</a>
 
-        <form class="form">
-          <h2>Register</h2>
-          <h4>Business Information</h4>
+        <div class="verification__container">
+          <h1>OTP Verification</h1>
+          <p>We Have Sent A One Time Password To You</p>
 
-          <div class="fields__container">
-            <div>
-              <label for="">Type of Business*</label><br /><select
-                name=""
-                id=""
-                class="select__box"
-              >
-                <option value="">Select---</option>
-              </select>
-            </div>
-            <div>
-              <label for="">No of Employees*</label><br /><select
-                name=""
-                id=""
-                class="select__box"
-              >
-                <option value="">Select---</option>
-              </select>
-            </div>
-            <div>
-              <label for="">Annual Revenue return In naira*</label><br /><select
-                name=""
-                id=""
-                class="select__box"
-              >
-                <option value="">Select---</option>
-              </select>
-            </div>
-            <div>
-              <label for="">Value of business/assets In naira*</label
-              ><br /><select name="" id="" class="select__box">
-                <option value="">Select---</option>
-              </select>
-            </div>
-            <button class="btn">Preview</button>
-          </div>
-        </form>
+          <input type="text" placeholder="Enter OTP" class="otp__input" />
+
+          <button class="email__btn">Verify</button>
+
+          <p>Didn't get OTP? <button class="resend">Resend</button></p>
+
+          <button class="method">Choose a new verification method</button>
+        </div>
       </section>
     </main>
   </body>

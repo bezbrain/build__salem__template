@@ -2,17 +2,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../individual.css" />
     <link rel="stylesheet" href="../sidebar.css" />
-    <link rel="stylesheet" href="./complete.css" />
-    <title>Completed</title>
+    <title>Business Information</title>
   </head>
   <body>
     <main class="basic__main__page">
       <aside class="sidebar">
         <!-- Logo -->
         <a href="">
-          <img src="../../logo/Logo.png" alt="Logo" />
+          <img src="../Logo.png" alt="Logo" />
         </a>
         <!-- Aside items -->
         <ul class="sidebar__unordered">
@@ -57,16 +60,52 @@
       <!-- Form fields -->
       <section class="form__container">
         <hr class="horizontal__line" />
+        <a href="" class="go__back"
+          ><span><i class="fa-solid fa-arrow-left"></i></span
+          ><span>Go back</span></a
+        >
 
-        <div class="verification__container">
-          <span>icon here</span>
-          <h3>Success</h3>
-          <p>
-            Your Account has been registered successfully. Tell the user to
-            check there email for verification link
-          </p>
-          <button class="complete__btn">Go to Tax Payer Management</button>
-        </div>
+        <form class="form">
+          <h2>Register</h2>
+          <h4>Business Information</h4>
+
+          <div class="fields__container">
+            <div>
+              <label for="">Type of Business*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">No of Employees*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Annual Revenue return In naira*</label><br /><select
+                name=""
+                id=""
+                class="select__box"
+              >
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Value of business/assets In naira*</label
+              ><br /><select name="" id="" class="select__box">
+                <option value="">Select---</option>
+              </select>
+            </div>
+            <button class="btn">Preview</button>
+          </div>
+        </form>
       </section>
     </main>
   </body>
