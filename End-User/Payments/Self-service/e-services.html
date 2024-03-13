@@ -1,0 +1,205 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="bg-[#fff] min-h-[100vh]">
+      <!-- Login Header -->
+      <header class="bg-white p-4 shadow-xl">
+        <section
+          class="max-w-[1400px] mx-auto items-center justify-between lgScreen:flex"
+        >
+          <img src="../images/Login-logo.png" alt="Login logo" />
+          <nav
+            class="w-[300px] absolute top-0 right-0 min-h-[100vh] bg-[#d2d6faff] z-10 lgScreen:min-h-fit lgScreen:w-auto lgScreen:static lgScreen:bg-inherit hidden"
+          >
+            <ul
+              class="items-center mt-24 text-center space-y-4 lgScreen:space-x-8 lgScreen:flex lgScreen:mt-0 lgScreen:space-y-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
+              <li><a href="">E-Service</a></li>
+              <li><a href="">Tax Category</a></li>
+              <li>
+                <button
+                  class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md border-2 border-[#1e39a6ff]"
+                >
+                  Register as Taxpayer
+                </button>
+              </li>
+              <li>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] px-4 py-2 rounded-md font-semibold border-2 border-[#1e39a6ff]"
+                >
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <!-- Tax Categories section -->
+      <section>
+        <header class="bg-[#040d33] text-white py-10 px-4">
+          <h1 class="text-center text-3xl surfaceDuo:text-5xl">E-Services</h1>
+        </header>
+
+        <p class="py-4 px-4 border-b-[2px]">
+          <a href="">Home</a> <i class="fa-solid fa-arrow-right px-4"></i>
+          <span class="">E-Services</span>
+          <i class="fa-solid fa-arrow-right px-4"></i>
+          <span class="text-[#1e39a6ff]">Tax filling</span>
+        </p>
+
+        <div class="max-w-[1400px] mx-auto px-4">
+          <!-- Header -->
+          <div class="pb-4 mt-16">
+            <h2 class="text-xl text-center sm:text-3xl xl:text-3xl">
+              Tax filling
+            </h2>
+            <p class="text-center my-2 font-semibold">Follow the steps below</p>
+          </div>
+
+          <!-- E-services -->
+          <div class="mb-48 max-w-[800px] mx-auto text-center">
+            <ol class="list-decimal px-8 text-left">
+              <li>
+                Download the Self-assessment form that applies to the tax you’re
+                filing.
+              </li>
+              <li>Fill it appropriately.</li>
+              <li>
+                Then proceed to upload it alongside other required documents.
+              </li>
+              <li>
+                Generate a reference number which you can use to check if your
+                invoice has generated.
+              </li>
+              <li>
+                If your invoice has been generated, you can go to the homepage
+                and click on “Pay Now” to pay.
+              </li>
+            </ol>
+
+            <h2 class="text-xl mt-10 mb-6 text-center sm:text-3xl xl:text-3xl">
+              Taxes that need to be filed
+            </h2>
+
+            <table class="w-full text-lg border-[1px]">
+              <thead>
+                <tr class="text-center">
+                  <th class="w-[5%] p-2">S/N</th>
+                  <th class="w-[40%]">Description</th>
+                  <th class="w-[20%]">Frequency</th>
+                  <th class="w-[25%] p-2"></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="text-center bg-[#f7f9fa]">
+                  <td class="pt-2 pl-2 pb-8">1</td>
+                  <td class="pt-2 pb-8">Pay As You Earn Tax (PAYE)</td>
+                  <td class="pt-2 pb-8">Monthly</td>
+                  <td class="p-2 pb-8"><i class="fa-solid fa-download"></i></td>
+                </tr>
+                <tr class="text-center">
+                  <td class="pt-2 pl-2 pb-8">2</td>
+                  <td class="pt-2 pb-8">Withholding Tax (WHT)</td>
+                  <td class="pt-2 pb-8">Monthly</td>
+                  <td class="p-2 pb-8"><i class="fa-solid fa-download"></i></td>
+                </tr>
+                <tr class="text-center bg-[#f7f9fa]">
+                  <td class="pt-2 pl-2 pb-8">3</td>
+                  <td class="pt-2 pb-8">Company Income Tax (CIT)</td>
+                  <td class="pt-2 pb-8">Annually</td>
+                  <td class="p-2 pb-8"><i class="fa-solid fa-download"></i></td>
+                </tr>
+                <tr class="text-center">
+                  <td class="pt-2 pl-2 pb-8">4</td>
+                  <td class="pt-2 pb-8">Education Tax</td>
+                  <td class="pt-2 pb-8">Annually</td>
+                  <td class="p-2 pb-8"><i class="fa-solid fa-download"></i></td>
+                </tr>
+                <tr class="text-center bg-[#f7f9fa]">
+                  <td class="pt-2 pl-2 pb-8">5</td>
+                  <td class="pt-2 pb-8">Development levy</td>
+                  <td class="pt-2 pb-8">One-off</td>
+                  <td class="p-2 pb-8"><i class="fa-solid fa-download"></i></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button
+              class="bg-[#1e39a6ff] text-white text-lg w-[35%] rounded-md mt-10 border-2 border-[#1e39a6ff] p-1"
+            >
+              Proceed
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="p-4 border-t-[2px]">
+        <div
+          class="max-w-[1400px] text-center mx-auto flex justify-between flex-col space-y-2 xl:flex-row xl:space-y-0"
+        >
+          <p class="">Copyright 2023 Endy Integrated Consultancy</p>
+
+          <div class="flex gap-8 w-fit mx-auto">
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">FAQ</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Contact us</a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <i class="fa-solid fa-person-circle-question"></i>
+                <a href="">Tax Calculator</a>
+              </span>
+            </p>
+          </div>
+
+          <div class="flex gap-4 w-fit mx-auto xl:mx-0">
+            <span>Follow us on: </span>
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-x-twitter text-xl"></i>
+            <i class="fa-brands fa-linkedin text-xl"></i>
+            <i class="fa-brands fa-instagram text-xl"></i>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

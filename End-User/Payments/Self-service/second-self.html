@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Register</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f5f5] min-h-[100vh]">
+      <!-- Header -->
+      <header class="bg-white p-4">
+        <section
+          class="w-full mx-auto shadow-lg shadow-slate-300 items-center justify-between xl:flex"
+        >
+          <a href="" class="w-[130px] pb-2 block">
+            <img src="../images/Login-logo.png" alt="Login logo" />
+          </a>
+          <nav
+            class="w-[300px] absolute top-0 z-20 pb-4 right-0 min-h-[100vh] bg-[#d2d6faff] xl:min-h-fit xl:w-auto xl:static xl:bg-inherit"
+          >
+            <ul
+              class="items-center mt-24 text-center space-y-4 xl:space-x-8 xl:flex xl:mt-0 xl:space-y-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
+              <li><a href="">E-Service</a></li>
+              <li><a href="">Tax Category</a></li>
+              <li>
+                <button
+                  class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md border-2 border-[#1e39a6ff]"
+                >
+                  Register as Taxpayer
+                </button>
+              </li>
+              <li>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] px-4 py-2 rounded-md font-semibold border-2 border-[#1e39a6ff]"
+                >
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <!-- Body -->
+      <section class="bg-[#f7f5f5] px-4">
+        <section class="mt-12 max-w-[700px] text-center mx-auto">
+          <h3 class="text-2xl font-semibold">Self Services</h3>
+
+          <div
+            class="w-fit mx-auto flex gap-2 mt-6 flex-col sm:gap-6 sm:flex-row border-2"
+          >
+            <button
+              class="text-[#1e39a6ff] font-semibold py-2 rounded-md bg-[#fff] w-[250px] border-2 border-[#1e39a6ff]"
+            >
+              Vehicle Registration Payment
+            </button>
+            <button
+              class="bg-[#1e39a6ff] text-white py-2 rounded-md w-[250px] border-2 border-[#1e39a6ff]"
+            >
+              Renew Your Drivers Licence
+            </button>
+          </div>
+
+          <summary>
+            <h3 class="my-4 text-xl font-semibold">Apply for renewal</h3>
+            <p>
+              Apply for renewal The holder of a valid licence may apply for and
+              obtain a renewal of the licence at any time from 30 days before
+              the expiry date of the licence.Applicant apply and complete the
+              form online, make payment, confirm payment at Board or Internal
+              Revenue, proceed to VIO for test and visit FRSC Drivers Licence
+              Centre for Biometric Capture.
+            </p>
+          </summary>
+
+          <!-- Inputs -->
+          <button
+            class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md w-[300px] border-2 border-[#1e39a6ff] mt-6"
+          >
+            Apply now
+          </button>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

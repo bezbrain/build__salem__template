@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="min-h-[100vh] flex items-center justify-center">
+      <div class="w-[700px] mx-auto px-4 py-10 relative">
+        <i
+          class="fa-solid fa-xmark text-3xl cursor-pointer absolute right-10 top-4"
+        ></i>
+        <!-- Header -->
+        <img src="../images/Yobe-logo.png" alt="Yobe" class="mx-auto mb-6" />
+
+        <!-- E-services -->
+        <form class="max-w-[800px] mx-auto">
+          <div class="grid gap-4 sm:gap-6 lg:grid-cols-2">
+            <div>
+              <label for="">Name of Organisation/Individual</label><br /><input
+                type="text"
+                placeholder="Endy Integrated Consultancy"
+                class="w-full h-[40px] rounded-md cursor-pointer px-4 text-lg border-[1px] mt-1"
+              />
+            </div>
+            <div>
+              <label for="">Office Issued </label><br /><input
+                type="text"
+                placeholder="Misto Garu"
+                class="w-full h-[40px] rounded-md cursor-pointer px-4 text-lg border-[1px] mt-1"
+              />
+            </div>
+            <div>
+              <label for="">Date Issued </label><br /><input
+                type="text"
+                placeholder="2023-07-28"
+                class="w-full h-[40px] rounded-md cursor-pointer px-4 text-lg border-[1px] mt-1"
+              />
+            </div>
+            <div>
+              <label for="">Expiry Date</label><br /><input
+                type="text"
+                placeholder="2023-12-31"
+                class="w-full h-[40px] rounded-md cursor-pointer px-4 text-lg border-[1px] mt-1"
+              />
+            </div>
+          </div>
+        </form>
+
+        <h3 class="text-lg font-semibold mb-1 mt-4">Remittance</h3>
+        <table class="w-full border-[1px]">
+          <tbody>
+            <tr>
+              <td class="p-3">Assessment 2020</td>
+              <td>Assessment 2021</td>
+              <td>Assessment 2022</td>
+            </tr>
+            <tr class="bg-[#f7f9fa]">
+              <td class="p-4">0.00</td>
+              <td>56,500,000,00</td>
+              <td>107,650,000.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

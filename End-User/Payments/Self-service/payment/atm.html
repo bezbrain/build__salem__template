@@ -1,0 +1,171 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Register</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f9faff] min-h-[100vh]">
+      <!-- Header -->
+      <header class="bg-white p-4">
+        <section
+          class="w-full mx-auto shadow-lg shadow-slate-300 items-center justify-between xl:flex"
+        >
+          <a href="" class="w-[130px] pb-2 block">
+            <img src="../../images/Login-logo.png" alt="Login logo" />
+          </a>
+          <nav
+            class="w-[300px] absolute top-0 z-20 pb-4 right-0 min-h-[100vh] bg-[#d2d6faff] xl:min-h-fit xl:w-auto xl:static xl:bg-inherit"
+          >
+            <ul
+              class="items-center mt-24 text-center space-y-4 xl:space-x-8 xl:flex xl:mt-0 xl:space-y-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
+              <li><a href="">E-Service</a></li>
+              <li><a href="">Tax Category</a></li>
+              <li>
+                <button
+                  class="bg-[#1e39a6ff] text-white px-4 py-2 rounded-md border-2 border-[#1e39a6ff]"
+                >
+                  Register as Taxpayer
+                </button>
+              </li>
+              <li>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] px-4 py-2 rounded-md font-semibold border-2 border-[#1e39a6ff]"
+                >
+                  Sign In
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <section class="bg-[#f7f5f5ff] min-h-[100vh] flex relative pb-8 px-4">
+        <section class="max-w-[1000px] mx-auto mx-4">
+          <a href="" class="mt-4 mb-4 flex items-center gap-2 w-fit"
+            ><span><i class="fa-solid fa-arrow-left"></i></span
+            ><span>Go back</span></a
+          >
+
+          <div class="">
+          <h1 class="text-xl mb-2 text-center font-semibold sm:text-3xl">
+            Make Payment
+          </h1>
+          <h3 class="text-center sm:text-lg">Select your preferred method</h3>
+
+          <div
+            class="grid my-8 gap-4 grid-cols-2 surfaceDuo:grid-cols-3 sm:my-16 sm:grid-cols-4 lgScreen:grid-cols-7"
+          >
+            <div
+              class="text-center leading-[1rem] bg-white px-4 py-6 min-w-[120px] rounded-lg cursor-pointer"
+            >
+              <i
+                class="fa-solid fa-money-bill mb-2 text-2xl text-[#1e39a6ff]"
+              ></i>
+              <p>Online <br />Payment</p>
+            </div>
+            <div
+              class="text-center leading-[1rem] bg-white px-4 py-6 min-w-[120px] rounded-lg cursor-pointer"
+            >
+              <i
+                class="fa-solid fa-money-bill-transfer mb-2 text-2xl text-[#1e39a6ff]"
+              ></i>
+              <p>Bank <br />Transfer</p>
+            </div>
+            <div
+              class="text-center leading-[1rem] bg-white px-4 py-6 min-w-[120px] rounded-lg cursor-pointer"
+            >
+              <i
+                class="fa-solid fa-building-columns mb-2 text-2xl text-[#1e39a6ff]"
+              ></i>
+              <p>Bank <br />Branch</p>
+            </div>
+            <div
+              class="text-center leading-[1rem] bg-white px-4 py-6 min-w-[120px] rounded-lg cursor-pointer"
+            >
+              <i
+                class="fa-solid fa-mobile-retro mb-2 text-2xl text-[#1e39a6ff]"
+              ></i>
+              <p>POS</p>
+            </div>
+            <div
+              class="text-center leading-[1rem] bg-white px-4 py-6 min-w-[120px] rounded-lg cursor-pointer"
+            >
+              <i class="fa-solid fa-mobile mb-2 text-2xl text-[#1e39a6ff]"></i>
+              <p>USSD</p>
+            </div>
+            <div
+              class="text-center leading-[1rem] bg-white px-4 py-6 min-w-[120px] rounded-lg cursor-pointer"
+            >
+              <span class="mb-2 block text-3xl text-[#1e39a6ff]">₦</span>
+              <p>e-Naira</p>
+            </div>
+            <div
+              class="text-center leading-[1rem] bg-white px-4 py-6 min-w-[120px] rounded-lg cursor-pointer"
+            >
+              <i
+                class="fa-solid fa-money-bills mb-2 text-2xl text-[#1e39a6ff]"
+              ></i>
+              <p>ATM</p>
+            </div>
+          </div>
+
+          <div class="">
+            <h2 class="text-xl font-semibold text-center">
+              Follow the steps below to make payment at the ATM 
+            </h2>
+
+            <hr class="h-[2px] bg-[#1e39a6ff] my-4" />
+
+            <div class="w-fit mx-auto">
+            <ol class="ml-4 list-decimal text-lg gap-8">
+              <li class="my-4">Choose 'ATM' as your preferred method.</li>
+              <li class="my-4">
+                Visit any nearby ATM machine
+              </li>
+              <li class="my-4">Insert your card and enter your PIN.</li>
+              <li class="my-4">Navigate to the 'Bill Payment' or similar option</li>
+              <li class="my-4">Enter the payment details as provided on the portal.</li>
+              <li class="my-4">Confirm the amount and complete the transaction. Retain the slip for your records.</li>
+            </ol>
+            <div class="w-1/2 mx-auto mt-10">
+            <button
+                class="bg-[#1e39a6ff] w-full text-white py-2 rounded-md mt-4 text-lg"
+              >
+                Pay Now
+              </button>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
