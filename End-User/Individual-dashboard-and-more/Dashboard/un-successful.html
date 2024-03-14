@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="min-h-[100vh] flex items-center justify-center">
+      <div class="w-[500px] mx-auto p-6 text-center border-2 rounded-xl">
+        <img
+          src="../images/invoice-failed copy.png"
+          alt="Success"
+          class="mx-auto mb-4 bg-[#fad4d4] rounded-full p-2"
+        />
+
+        <h3 class="text-2xl font-semibold mb-1 mt-4">Un-Successfully</h3>
+        <p class="mb-4 text-lg">
+          We are unable to process your request please try again.
+        </p>
+
+        <div>
+          <button
+            class="border-2 border-[#1e39a6ff] rounded-md p-2 text-[#1e39a6ff] font-semibold w-[200px]"
+          >
+            Go to back Dashboard
+          </button>
+          <button
+            class="border-2 border-[#1e39a6ff] bg-[#1e39a6ff] text-[#fff] rounded-md p-2 w-[200px]"
+          >
+            Redeem more Gifts
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

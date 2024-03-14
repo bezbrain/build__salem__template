@@ -1,0 +1,318 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mac: "1450px",
+            xxl: "1300px",
+            tablet: "1150px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f5f5ff]">
+      <!-- Dashboard Header -->
+      <header class="bg-white px-4 py-2 border-[1px]">
+        <section class="mx-auto items-center justify-between flex">
+          <a href=""
+            ><img
+              src="../images/Logo.png"
+              alt="Dashboard logo"
+              class="w-[100px] h-fit surfaceDuo:w-[150px]"
+          /></a>
+
+          <nav class="flex">
+            <ul class="space-x-[25px] surfaceDuo:space-x-12 xl:space-x-24 flex">
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-magnifying-glass opacity-50 text-xl"></i>
+                <span class="hidden lg:block">Search</span>
+              </li>
+              <li class="text-xl opacity-50 cursor-pointer">
+                <i class="fa-solid fa-bell"></i>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-regular fa-circle-question opacity-50 text-xl"></i
+                ><a href="" class="hidden lg:block">Help</a>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-gear opacity-50 text-xl"></i
+                ><span class="hidden lg:block">Settings</span>
+              </li>
+              <li class="space-x-2">
+                <span class="bg-[#1e39a6ff] text-white rounded-full p-[5px]"
+                  >DA</span
+                ><a href="" class="hidden lg:inline">David Adebola</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <section class="flex">
+        <!-- Sidebar -->
+        <aside
+          class="py-8 bg-white h-[95vh] flex flex-col justify-between lgScreen:w-[300px]"
+        >
+          <ul class="">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-solid fa-table-cells-large text-2xl"></i
+                ><span class="hidden lgScreen:inline">Dashboard</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-trailer text-lg"></i
+                ><span class="hidden lgScreen:inline">My Issues</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-regular fa-file-zipper text-2xl"></i
+                ><span class="hidden lgScreen:inline">Invoice</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-wallet text-xl"></i
+                ><span class="hidden lgScreen:inline">Payment history</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-2.5"
+                ><i class="fa-solid fa-user-plus text-lg"></i
+                ><span class="hidden lgScreen:inline">PAYE Management</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-globe text-xl"></i
+                ><span class="hidden lgScreen:inline">E-Service</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-network-wired text-lg"></i
+                ><span class="hidden lgScreen:inline">Profile</span></a
+              >
+            </li>
+          </ul>
+          <ul class="my-[6vh]">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-regular fa-circle-question text-lg"></i
+                ><span class="hidden lgScreen:inline">Help & Support</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <button class="flex items-center gap-3">
+                <i class="fa-solid fa-right-from-bracket text-lg"></i
+                ><span class="hidden lgScreen:inline">Log Out</span>
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Body of the Dashboard -->
+        <div class="w-full px-4 lgScreen:w-4/5 mb-8 overflow-x-hidden">
+          <div class="flex justify-between items-center my-8">
+            <h2 class="text-xl font-semibold sm:text-3xl">Dashboard</h2>
+            <button
+              class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md border-2 border-[#1e39a6ff] sm:px-4 sm:py-2"
+            >
+              Generate invoice
+            </button>
+          </div>
+
+          <div
+            class="grid gap-4 md:grid-cols-2 tablet:grid-cols-3 mac:grid-cols-4 -mt-4"
+          >
+            <!-- Reward Points -->
+            <div class="border-[1px] bg-white rounded-xl p-4 pt-8 space-y-2">
+              <div class="flex gap-4 gap-4 items-center">
+                <img src="../images/Reward-point.png" alt="Reward" />
+                <div class="w-full">
+                  <h3 class="text-lg font-semibold">Reward Points</h3>
+                  <p>You have 84 points</p>
+                  <div class="flex items-center gap-1">
+                    <p class="w-full bg-[#fff2db]">
+                      <span
+                        class="bg-[#fcbe49] rounded-xl w-4/5 h-[10px] block"
+                      ></span>
+                    </p>
+                    <span>84/100</span>
+                  </div>
+                </div>
+              </div>
+              <p class="">Redeem you points when it reaches 100</p>
+              <a href="" class="text-[#1e39a6] font-semibold underline"
+                >See what you can redeem</a
+              >
+            </div>
+
+            <div class="border-[1px] bg-white rounded-md p-6 space-y-2">
+              <i
+                class="fa-solid fa-lock text-[#2241a1] bg-[#e4e8f5] p-2 rounded-full"
+              ></i>
+              <p class="text-lg lg:text-xl">TOTAL NUMBER OF INVOICE</p>
+              <p class="text-right font-semibold text-2xl">10</p>
+            </div>
+
+            <div class="border-[1px] bg-white rounded-md p-6 space-y-2">
+              <i
+                class="fa-solid fa-lock text-[#2241a1] bg-[#e4e8f5] p-2 rounded-full"
+              ></i>
+              <p class="text-lg lg:text-xl">TOTAL AMOUNT INVOICED</p>
+              <p class="text-right font-semibold text-2xl">₦68,100</p>
+            </div>
+
+            <div class="border-[1px] bg-white rounded-md p-6 space-y-2">
+              <i
+                class="fa-solid fa-lock text-[#2241a1] bg-[#e4e8f5] p-2 rounded-full"
+              ></i>
+              <p class="text-lg lg:text-xl">TOTAL NUMBER OF INVOICE DUE</p>
+              <p class="text-right font-semibold text-2xl">10</p>
+            </div>
+
+            <div class="border-[1px] bg-white rounded-md p-6 space-y-2">
+              <i
+                class="fa-solid fa-lock text-[#2241a1] bg-[#e4e8f5] p-2 rounded-full"
+              ></i>
+              <p class="text-lg lg:text-xl">TOTAL NUMBER OF INVOICE PAID</p>
+              <p class="text-right font-semibold text-2xl">100</p>
+            </div>
+
+            <div class="border-[1px] bg-white rounded-md p-6 space-y-2">
+              <i
+                class="fa-solid fa-lock text-[#2241a1] bg-[#e4e8f5] p-2 rounded-full"
+              ></i>
+              <p class="text-lg lg:text-xl">TOTAL AMOUNT OF INVOICE PAID</p>
+              <p class="text-right font-semibold text-2xl">₦68,100</p>
+            </div>
+
+            <div class="border-[1px] bg-white rounded-md p-6 space-y-2">
+              <i
+                class="fa-solid fa-lock text-[#2241a1] bg-[#e4e8f5] p-2 rounded-full"
+              ></i>
+              <p class="text-lg lg:text-xl">TOTAL AMOUNT OF INVOICE DUE</p>
+              <p class="text-right font-semibold text-2xl">₦48,100</p>
+            </div>
+          </div>
+
+          <div class="text-right">
+            <button class="underline">View less</button>
+          </div>
+
+          <hr class="mt-2" />
+
+          <!-- Charts and Graphs -->
+          <div class="mt-10">
+            <h3 class="text-lg font-semibold">Recent Invoices</h3>
+            <div class="grid gap-4 tablet:grid-cols-2 overflow-x-auto">
+              <div>
+                <table
+                  class="w-[600px] mt-2 bg-[#fff] rounded-lg text-sm sm:w-full"
+                >
+                  <thead>
+                    <tr class="text-left opacity-70 border-b-2">
+                      <th class="p-4 w-[20%]">
+                        Payer ID<i class="fa-solid fa-arrow-down ml-1"></i>
+                      </th>
+                      <th class="text-center w-[10%]">Invoice Number</th>
+                      <th class="text-center w-[10%]">Amount</th>
+                      <th class="text-center p-2 w-[15%]">Due date</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr class="text-center bg-[#f2f4f5ff]">
+                      <td class="p-4">52166565161</td>
+                      <td class="p-4">INV-5713114PQR</td>
+                      <td class="p-4">N10,000</td>
+                      <td class="p-4">08/03/2023</td>
+                    </tr>
+                    <tr class="text-center bg-[#fff]">
+                      <td class="p-4">52166565161</td>
+                      <td class="p-4">INV-5713114PQR</td>
+                      <td class="p-4">N10,000</td>
+                      <td class="p-4">08/03/2023</td>
+                    </tr>
+                    <tr class="text-center bg-[#f2f4f5ff]">
+                      <td class="p-4">52166565161</td>
+                      <td class="p-4">INV-5713114PQR</td>
+                      <td class="p-4">N10,000</td>
+                      <td class="p-4">08/03/2023</td>
+                    </tr>
+                    <tr class="text-center bg-[#fff]">
+                      <td class="p-4">52166565161</td>
+                      <td class="p-4">INV-5713114PQR</td>
+                      <td class="p-4">N10,000</td>
+                      <td class="p-4">08/03/2023</td>
+                    </tr>
+                    <tr class="text-center bg-[#f2f4f5ff]">
+                      <td class="p-4">52166565161</td>
+                      <td class="p-4">INV-5713114PQR</td>
+                      <td class="p-4">N10,000</td>
+                      <td class="p-4">08/03/2023</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div
+                  class="flex bg-white items-center py-3 px-5 gap-4 w-[600px] sm:w-full"
+                >
+                  <button class="border-2 px-3 py-1 rounded-md">
+                    Previous
+                  </button>
+                  <button class="border-2 px-3 py-1 rounded-md">Next</button>
+                  <span class="ml-auto block">Page 1</span>
+                </div>
+              </div>
+
+              <!-- Graph -->
+              <div
+                class="h-[400px] w-full border-[1px] bg-white rounded-lg"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

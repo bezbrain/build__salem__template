@@ -12,7 +12,7 @@
       tailwind.config = {
         theme: {
           screens: {
-          mac: "1400px",
+            mac: "1400px",
             xxl: "1300px",
             xl: "1024px",
             lgScreen: "950px",
@@ -194,126 +194,201 @@
 
           <div class="">
             <div class="bg-white rounded-lg border-[1px] p-4 sm:w-fit">
-            <div class="gap-4 sm:flex">
-                <h2 class="text-2xl font-semibold mr-8 mb-2 sm:mb-0">Create MDA</h2>
-                <button class="bg-[#1e39a6ff] text-white py-1 rounded-md px-4 md:px-8">Create MDA</button>
-                <button class="bg-[#d2d6faff] text-[#1e39a6ff] font-semibold py-1 rounded-md mt-2 px-4 md:px-8 iPhone:mt-0">Download Template</button>
-            </div>
-            <p class="mt-4 mb-2">Upload Excel template</p>
+              <div class="gap-4 sm:flex">
+                <h2 class="text-2xl font-semibold mr-8 mb-2 sm:mb-0">
+                  Create MDA
+                </h2>
+                <button
+                  class="bg-[#1e39a6ff] text-white py-1 rounded-md px-4 md:px-8"
+                >
+                  Create MDA
+                </button>
+                <button
+                  class="bg-[#d2d6faff] text-[#1e39a6ff] font-semibold py-1 rounded-md mt-2 px-4 md:px-8 iPhone:mt-0"
+                >
+                  Download Template
+                </button>
+              </div>
+              <p class="mt-4 mb-2">Upload Excel template</p>
 
-            <div class="flex">
-                <label for="file" class="block w-full flex items-center h-[40px]">
-                    <span class="pl-2 border-2 w-[60%] rounded-l-md py-1 cursor-pointer h-full">No file chosen</span>
-                    <span class="bg-[#1e39a6ff] text-white py-1 rounded-r-md w-[40%] flex items-center h-full justify-center border-[#1e39a6ff] cursor-pointer iPhone:gap-2 iPhone:border-2">
-                        <i class="fa-solid fa-file-export text-sm iPhone:text-md sm:text-lg"></i><span class="text-sm iPhone:text-md sm:text-lg">Choose</span>
-                    </span>
+              <div class="flex">
+                <label
+                  for="file"
+                  class="block w-full flex items-center h-[40px]"
+                >
+                  <span
+                    class="pl-2 border-2 w-[60%] rounded-l-md py-1 cursor-pointer h-full"
+                    >No file chosen</span
+                  >
+                  <span
+                    class="bg-[#1e39a6ff] text-white py-1 rounded-r-md w-[40%] flex items-center h-full justify-center border-[#1e39a6ff] cursor-pointer iPhone:gap-2 iPhone:border-2"
+                  >
+                    <i
+                      class="fa-solid fa-file-export text-sm iPhone:text-md sm:text-lg"
+                    ></i
+                    ><span class="text-sm iPhone:text-md sm:text-lg"
+                      >Choose</span
+                    >
+                  </span>
                 </label>
-                <input type="file" id="file" class="hidden">
-            </div>
+                <input type="file" id="file" class="hidden" />
+              </div>
             </div>
 
             <!-- Ministries, Department & Agencies table -->
             <div class="w-full overflow-x-auto">
-                <h2 class="mt-6 text-2xl font-semibold">Ministries, Departments & Agencies</h2>
-            <table class="w-[1200px] mt-2 bg-[#fff] border-2 rounded-lg text-sm mac:w-full">
-            <thead>
-              <tr class="text-left opacity-70 border-b-2">
-                <th class="p-4 w-[20%]">Name of MDA</th>
-                <th class="text-center w-[10%]">State</th>
-                <th class="text-center w-[10%]">LGA</th>
-                <th class="text-center p-2 w-[15%]">Address</th>
-                <th class="text-center p-2 w-[10%]">Date created</th>
-                <th class="text-center p-2 w-[10%]">Number of revenue heads</th>
-                <th class="text-center p-2 w-[10%]">Revenue generated</th>
-                <th class="text-center p-2 w-[10%]">Status</th>
-                <th class="text-center p-2 w-[5%]"></th>
-              </tr>
-            </thead>
+              <h2 class="mt-6 text-2xl font-semibold">
+                Ministries, Departments & Agencies
+              </h2>
+              <table
+                class="w-[1200px] mt-2 bg-[#fff] border-2 rounded-lg text-sm mac:w-full"
+              >
+                <thead>
+                  <tr class="text-left opacity-70 border-b-2">
+                    <th class="p-4 w-[20%]">Name of MDA</th>
+                    <th class="text-center w-[10%]">State</th>
+                    <th class="text-center w-[10%]">LGA</th>
+                    <th class="text-center p-2 w-[15%]">Address</th>
+                    <th class="text-center p-2 w-[10%]">Date created</th>
+                    <th class="text-center p-2 w-[10%]">
+                      Number of revenue heads
+                    </th>
+                    <th class="text-center p-2 w-[10%]">Revenue generated</th>
+                    <th class="text-center p-2 w-[10%]">Status</th>
+                    <th class="text-center p-2 w-[5%]"></th>
+                  </tr>
+                </thead>
 
-            <tbody>
-              <tr class="text-center bg-[#f2f4f5ff]">
-                <td class="p-5 text-left">Ministry of Agriculture</td>
-                <td>Akwa Ibom</td>
-                <td>Uyo</td>
-                <td class="text-left">Block 1, Idongesit Nkanga Secretariat complex, Uyo</td>
-                <td class="">22/02/2023</td>
-                <td class="">6</td>
-                <td class="">N100,000</td>
-                <td>
-                    <span class="text-[#027a48ff] font-semibold bg-[#ebfcf2ff] rounded-xl px-2 py-1">Active</span>
-                </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
-                </td>
-              </tr>
-              <tr class="text-center bg-[#fff]">
-                <td class="p-5 text-left">Ministry of Works</td>
-                <td>Akwa Ibom</td>
-                <td>Uyo</td>
-                <td class="text-left">Block 1, Idongesit Nkanga Secretariat complex, Uyo</td>
-                <td class="">22/02/2023</td>
-                <td class="">15</td>
-                <td class="">N100,000</td>
-                <td>
-                    <span class="text-[#027a48ff] font-semibold bg-[#ebfcf2ff] rounded-xl px-2 py-1">Active</span>
-                </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
-                </td>
-              </tr>
-              <tr class="text-center bg-[#f2f4f5ff]">
-                <td class="p-5 text-left">Ministry of Education</td>
-                <td>Akwa Ibom</td>
-                <td>Uyo</td>
-                <td class="text-left">Block 1, Idongesit Nkanga Secretariat complex, Uyo</td>
-                <td class="">22/02/2023</td>
-                <td class="">10</td>
-                <td class="">N100,000</td>
-                <td>
-                    <span class="text-[#b82f25ff] bg-[#fff3f2ff] font-semibold rounded-xl px-2 py-1">Inactive</span>
-                </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
-                </td>
-              </tr>
-              <tr class="text-center bg-[#fff]">
-                <td class="p-5 text-left">Ministry of Lands & Housing</td>
-                <td>Akwa Ibom</td>
-                <td>Uyo</td>
-                <td class="text-left">Block 1, Idongesit Nkanga Secretariat complex, Uyo</td>
-                <td class="">22/02/2023</td>
-                <td class="">16</td>
-                <td class="">N100,000</td>
-                <td>
-                    <span class="text-[#027a48ff] font-semibold bg-[#ebfcf2ff] rounded-xl px-2 py-1">Active</span>
-                </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
-                </td>
-              </tr>
-              <tr class="text-center bg-[#f2f4f5ff]">
-                <td class="p-5 text-left">Ministry of Justice</td>
-                <td>Akwa Ibom</td>
-                <td>Uyo</td>
-                <td class="text-left">Block 1, Idongesit Nkanga Secretariat complex, Uyo</td>
-                <td class="">22/02/2023</td>
-                <td class="">20</td>
-                <td class="">N100,000</td>
-                <td>
-                    <span class="text-[#b82f25ff] bg-[#fff3f2ff] font-semibold rounded-xl px-2 py-1">Inactive</span>
-                </td>
-                <td class="pr-6">
-                    <button class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl">View</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flex bg-white py-3 px-5 gap-4 w-[1200px] mac:w-full">
-              <button class="border-2 px-3 py-1 rounded-md">Previous</button>
-              <button class="border-2 px-3 py-1 rounded-md">Next</button>
-              <span class="ml-auto block">Page 1</span>
+                <tbody>
+                  <tr class="text-center bg-[#f2f4f5ff]">
+                    <td class="p-5 text-left">Ministry of Agriculture</td>
+                    <td>Akwa Ibom</td>
+                    <td>Uyo</td>
+                    <td class="text-left">
+                      Block 1, Idongesit Nkanga Secretariat complex, Uyo
+                    </td>
+                    <td class="">22/02/2023</td>
+                    <td class="">6</td>
+                    <td class="">N100,000</td>
+                    <td>
+                      <span
+                        class="text-[#027a48ff] font-semibold bg-[#ebfcf2ff] rounded-xl px-2 py-1"
+                        >Active</span
+                      >
+                    </td>
+                    <td class="pr-6">
+                      <button
+                        class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="text-center bg-[#fff]">
+                    <td class="p-5 text-left">Ministry of Works</td>
+                    <td>Akwa Ibom</td>
+                    <td>Uyo</td>
+                    <td class="text-left">
+                      Block 1, Idongesit Nkanga Secretariat complex, Uyo
+                    </td>
+                    <td class="">22/02/2023</td>
+                    <td class="">15</td>
+                    <td class="">N100,000</td>
+                    <td>
+                      <span
+                        class="text-[#027a48ff] font-semibold bg-[#ebfcf2ff] rounded-xl px-2 py-1"
+                        >Active</span
+                      >
+                    </td>
+                    <td class="pr-6">
+                      <button
+                        class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="text-center bg-[#f2f4f5ff]">
+                    <td class="p-5 text-left">Ministry of Education</td>
+                    <td>Akwa Ibom</td>
+                    <td>Uyo</td>
+                    <td class="text-left">
+                      Block 1, Idongesit Nkanga Secretariat complex, Uyo
+                    </td>
+                    <td class="">22/02/2023</td>
+                    <td class="">10</td>
+                    <td class="">N100,000</td>
+                    <td>
+                      <span
+                        class="text-[#b82f25ff] bg-[#fff3f2ff] font-semibold rounded-xl px-2 py-1"
+                        >Inactive</span
+                      >
+                    </td>
+                    <td class="pr-6">
+                      <button
+                        class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="text-center bg-[#fff]">
+                    <td class="p-5 text-left">Ministry of Lands & Housing</td>
+                    <td>Akwa Ibom</td>
+                    <td>Uyo</td>
+                    <td class="text-left">
+                      Block 1, Idongesit Nkanga Secretariat complex, Uyo
+                    </td>
+                    <td class="">22/02/2023</td>
+                    <td class="">16</td>
+                    <td class="">N100,000</td>
+                    <td>
+                      <span
+                        class="text-[#027a48ff] font-semibold bg-[#ebfcf2ff] rounded-xl px-2 py-1"
+                        >Active</span
+                      >
+                    </td>
+                    <td class="pr-6">
+                      <button
+                        class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="text-center bg-[#f2f4f5ff]">
+                    <td class="p-5 text-left">Ministry of Justice</td>
+                    <td>Akwa Ibom</td>
+                    <td>Uyo</td>
+                    <td class="text-left">
+                      Block 1, Idongesit Nkanga Secretariat complex, Uyo
+                    </td>
+                    <td class="">22/02/2023</td>
+                    <td class="">20</td>
+                    <td class="">N100,000</td>
+                    <td>
+                      <span
+                        class="text-[#b82f25ff] bg-[#fff3f2ff] font-semibold rounded-xl px-2 py-1"
+                        >Inactive</span
+                      >
+                    </td>
+                    <td class="pr-6">
+                      <button
+                        class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-2xl"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="flex bg-white py-3 px-5 gap-4 w-[1200px] mac:w-full">
+                <button class="border-2 px-3 py-1 rounded-md">Previous</button>
+                <button class="border-2 px-3 py-1 rounded-md">Next</button>
+                <span class="ml-auto block">Page 1</span>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </section>
     </main>

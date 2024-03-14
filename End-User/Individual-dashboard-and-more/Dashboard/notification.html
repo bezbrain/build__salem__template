@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xxl: "1300px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="min-h-[100vh] flex items-center justify-center">
+      <div class="w-[350px] lg:w-[700px] mx-auto border-2">
+        <header class="flex items-center justify-between p-4">
+          <h3 class="text-2xl font-semibold">Notifications</h3>
+          <i class="fa-solid fa-xmark text-2xl opacity-70"></i>
+        </header>
+
+        <hr />
+
+        <div class="flex justify-between p-4">
+          <p>Your TIN has been verified</p>
+          <button class="text-[#1f6e41] underline">Clear</button>
+        </div>
+
+        <hr />
+
+        <div class="flex justify-between p-4">
+          <p>Your payment is successful</p>
+          <button class="text-[#1f6e41] underline">Clear</button>
+        </div>
+
+        <hr />
+
+        <div class="flex justify-between p-4">
+          <p>Your complaint has been answered</p>
+          <button class="text-[#1f6e41] underline">Clear</button>
+        </div>
+
+        <hr />
+
+        <div class="flex justify-between p-4">
+          <p>Your payment is successful</p>
+          <button class="text-[#1f6e41] underline">Clear</button>
+        </div>
+
+        <hr />
+
+        <div class="flex justify-between p-4">
+          <p>Your payment is due</p>
+          <button class="text-[#1f6e41] underline">Clear</button>
+        </div>
+
+        <hr />
+
+        <div class="p-8"></div>
+      </div>
+    </section>
+  </body>
+</html>

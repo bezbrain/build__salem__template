@@ -1,0 +1,199 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mac: "1450px",
+            xxl: "1300px",
+            tablet: "1150px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f5f5] min-h-[100vh]">
+      <!-- Dashboard Header -->
+      <header class="bg-white px-4 py-2 border-[1px]">
+        <section class="mx-auto items-center justify-between flex">
+          <a href=""
+            ><img
+              src="../images/Logo.png"
+              alt="Dashboard logo"
+              class="w-[100px] h-fit surfaceDuo:w-[150px]"
+          /></a>
+
+          <nav class="flex">
+            <ul class="space-x-[25px] surfaceDuo:space-x-12 xl:space-x-24 flex">
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-magnifying-glass opacity-50 text-xl"></i>
+                <span class="hidden lg:block">Search</span>
+              </li>
+              <li class="text-xl opacity-50 cursor-pointer">
+                <i class="fa-solid fa-bell"></i>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-regular fa-circle-question opacity-50 text-xl"></i
+                ><a href="" class="hidden lg:block">Help</a>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-gear opacity-50 text-xl"></i
+                ><span class="hidden lg:block">Settings</span>
+              </li>
+              <li class="space-x-2">
+                <span class="bg-[#1e39a6ff] text-white rounded-full p-[5px]"
+                  >DA</span
+                ><a href="" class="hidden lg:inline">David Adebola</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <section class="px-0">
+        <a href="" class="text-[#1e39a6ff] font-semibold p-4 block"
+          ><i class="fa-solid fa-arrow-left mr-3"></i><span>Go back</span></a
+        >
+
+        <hr class="mb-4" />
+
+        <div
+          class="max-w-[1400px] mx-auto gap-4 bg-white p-4 rounded-lg lg:flex"
+        >
+          <!-- Sidebar -->
+          <aside
+            class="w-full surfaceDuo:w-[60%] mx-auto lg:w-[350px] xl:w-[30%] xxl:w-[25%]"
+          >
+            <img
+              src="../images/p55.png"
+              alt="p55"
+              class="border-[2px] rounded-lg w-full"
+            />
+            <!-- Base images -->
+            <div class="flex justify-between my-3">
+              <img
+                src="../images/p55-1.png"
+                alt="p55"
+                class="border-[1px] rounded-lg"
+              />
+              <img
+                src="../images/p55-2.png"
+                alt="p55"
+                class="border-[1px] rounded-lg"
+              />
+              <img
+                src="../images/p55-3.png"
+                alt="p55"
+                class="border-[1px] rounded-lg"
+              />
+              <img
+                src="../images/p55-4.png"
+                alt="p55"
+                class="border-[1px] rounded-lg"
+              />
+            </div>
+          </aside>
+
+          <div class="w-full mt-20 lg:mt-0 lg:w-[60%] xl:w-[70%] xxl:w-[80%]">
+            <h2 class="text-2xl font-semibold max-w-[500px]">
+              itel P55+ 6.6″ HD + Punch Hole Display 128GB ROM + 8GB-GREEN
+            </h2>
+
+            <div class="flex items-center gap-4 mt-4">
+              <span class="text-xl opacity-50">₦ 126,600</span>
+              <span class="text-3xl font-semibold">50pts</span>
+            </div>
+
+            <p class="text-2xl my-3">
+              Redeem the product and pick up at our head office
+            </p>
+
+            <div class="border-2 rounded-lg p-4">
+              <h3 class="text-2xl mb-3">Product details</h3>
+              <ul class="list-disc px-8">
+                <li>
+                  5000mAh Mega Battery Powers up your whole day. Stronger
+                  battery with AI Power Master for longer-lasting entertainment
+                  and social experience. Always stay online and connected to the
+                  world.
+                </li>
+                <li>
+                  50MP AI Clear Rear Camera P55+ captures exhilarating moments
+                  with a 50MP AI Clear rear camera, delivering crisp and clear
+                  image details just like you see in reality.
+                </li>
+                <li>
+                  90Hz 6.6'' HD+ Punch Hole Display For an immersive experience
+                  1612×720 Quad High-Definition adding 72% High Color Saturation
+                  to restore true colors. Features a 90% screen-to-body ratio
+                  that pulls you into the storyline when enjoying movies or
+                  shows.
+                </li>
+                <li>
+                  256+16 (8+8) GB of Storage Higher efficiency. Faster
+                  experience, more space. 256+16GB storage capacity memory
+                  fusion for ultra-fast performance and collection of all the
+                  fun moments. Switch apps in an instant and enjoy smoother
+                  performance.
+                  <a
+                    href=""
+                    class="text-[#1e39a6ff] font-semibold py-4 underline"
+                    >See full details</a
+                  >
+                </li>
+              </ul>
+
+              <h3 class="text-2xl my-3">Specifications</h3>
+              <p class="mb-3">KEY FEATURES</p>
+              <ul class="list-disc px-8">
+                <li>
+                  5000mAh Mega Battery Powers up your whole day.
+                </li>
+                <li>
+                  45W fast charging always ready to go.
+                </li>
+                <li>
+                  256+16 (8+8) GB of Storage Higher efficiency.
+                </li>
+                <li>
+                  50MP AI Clear Rear Camera P55+ captures exhilarating moments with a 50MP AI Clear rear camera.
+                </li>
+                <li>
+                  90Hz 6.6'' HD+ Punch Hole Display For an immersive experience.
+                </li>
+              </ul>
+
+              <a
+                    href=""
+                    class="text-[#1e39a6ff] font-semibold py-4 underline block"
+                    >See full specifications</a
+                  >
+                </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-3 py-4 bg-white">
+            <button class="bg-[#1e39a6ff] text-white w-[300px] py-2 rounded-lg">Redeem This Product</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

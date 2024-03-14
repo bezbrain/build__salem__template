@@ -1,0 +1,391 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mac: "1450px",
+            xxl: "1300px",
+            tablet: "1150px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f5f5] min-h-[100vh]">
+      <!-- Dashboard Header -->
+      <header class="bg-white px-4 py-2 border-[1px]">
+        <section class="mx-auto items-center justify-between flex">
+          <a href=""
+            ><img
+              src="../images/Logo.png"
+              alt="Dashboard logo"
+              class="w-[100px] h-fit surfaceDuo:w-[150px]"
+          /></a>
+
+          <nav class="flex">
+            <ul class="space-x-[25px] surfaceDuo:space-x-12 xl:space-x-24 flex">
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-magnifying-glass opacity-50 text-xl"></i>
+                <span class="hidden lg:block">Search</span>
+              </li>
+              <li class="text-xl opacity-50 cursor-pointer">
+                <i class="fa-solid fa-bell"></i>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-regular fa-circle-question opacity-50 text-xl"></i
+                ><a href="" class="hidden lg:block">Help</a>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-gear opacity-50 text-xl"></i
+                ><span class="hidden lg:block">Settings</span>
+              </li>
+              <li class="space-x-2">
+                <span class="bg-[#1e39a6ff] text-white rounded-full p-[5px]"
+                  >DA</span
+                ><a href="" class="hidden lg:inline">David Adebola</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <section class="pb-10">
+        <div class="bg-[#ebc746] py-8">
+          <div
+            class="max-w-[1400px] px-4 mx-auto flex items-center justify-between"
+          >
+            <div class="gap-4 hidden sm:flex">
+              <img
+                src="../images/pay.png"
+                alt="Pay"
+                class="w-[50px] h-[70px] xl:w-full xl:h-full"
+              />
+              <img
+                src="../images/Earn.png"
+                alt="Earn"
+                class="w-[50px] h-[70px] xl:w-full xl:h-full"
+              />
+              <img
+                src="../images/redeem.png"
+                alt="redeem"
+                class="w-[50px] h-[70px] xl:w-full xl:h-full"
+              />
+            </div>
+
+            <div class="text-[#1e39a6ff] font-semibold xl:text-2xl">
+              <p class="flex items-center gap-4">
+                You have <span class="text-2xl xl:text-6xl">84</span> Points
+              </p>
+              <p>Pay your tax in time to gain more points</p>
+            </div>
+
+            <button
+              class="bg-[#1e39a6ff] text-white rounded-lg py-2 px-2 md:w-[180px]"
+            >
+              Pay Now
+            </button>
+          </div>
+        </div>
+
+        <div class="flex justify-between border-b-2">
+          <a href="" class="text-[#1e39a6ff] font-semibold p-4 block"
+            ><i class="fa-solid fa-arrow-left mr-3"></i
+            ><span>Go back to Dashboard</span></a
+          >
+
+          <button
+            class="bg-[#1e39a6ff] text-white w-[500px] py-2 hidden md:block"
+          >
+            <i class="fa-solid fa-border-none"></i> My Orders
+          </button>
+        </div>
+
+        <div class="flex justify-between gap-4 pl-10">
+          <!-- Gifts -->
+          <div class="mac:w-[65%]">
+            <h2 class="mt-4">
+              <i class="fa-solid fa-gift text-[#1e39a6ff]"></i>
+              <span class="text-lg font-semibold">Gift to Redeem</span>
+            </h2>
+
+            <div
+              class="flex flex-wrap justify-center md:grid gap-4 mt-6 w-full xl:grid-cols-2 xxl:grid-cols-3 mac:grid-cols-4"
+            >
+              <!-- Each gift container -->
+              <div class="border-[1px] rounded-lg bg-white">
+                <img
+                  src="../images/p55-gift.png"
+                  alt="p55 gift"
+                  class="w-full rounded-lg"
+                />
+                <p class="text-sm p-2">itel P55+ 6.6″ HD + Punc…</p>
+                <footer class="flex items-center px-2 pb-2">
+                  <p>
+                    <span class="text-sm opacity-70">₦ 159,900</span>
+                    <br /><span class="font-semibold">50pts</span>
+                  </p>
+                  <button
+                    class="bg-[#1e39a6ff] text-white rounded-lg px-4 py-1 text-sm ml-2"
+                  >
+                    Reedem Gift
+                  </button>
+                </footer>
+              </div>
+              <div class="border-[1px] rounded-lg bg-white">
+                <img
+                  src="../images/Nivea.png"
+                  alt="p55 gift"
+                  class="w-full rounded-lg"
+                />
+                <p class="text-sm p-2">itel P55+ 6.6″ HD + Punc…</p>
+                <footer class="flex items-center px-2 pb-2">
+                  <p>
+                    <span class="text-sm opacity-70">₦ 159,900</span>
+                    <br /><span class="font-semibold">50pts</span>
+                  </p>
+                  <button
+                    class="bg-[#1e39a6ff] text-white rounded-lg px-4 py-1 text-sm ml-2"
+                  >
+                    Reedem Gift
+                  </button>
+                </footer>
+              </div>
+              <div class="border-[1px] rounded-lg bg-white">
+                <img
+                  src="../images/oraimo.png"
+                  alt="p55 gift"
+                  class="w-full rounded-lg"
+                />
+                <p class="text-sm p-2">itel P55+ 6.6″ HD + Punc…</p>
+                <footer class="flex items-center px-2 pb-2">
+                  <p>
+                    <span class="text-sm opacity-70">₦ 159,900</span>
+                    <br /><span class="font-semibold">50pts</span>
+                  </p>
+                  <button
+                    class="bg-[#1e39a6ff] text-white rounded-lg px-4 py-1 text-sm ml-2"
+                  >
+                    Reedem Gift
+                  </button>
+                </footer>
+              </div>
+              <div class="border-[1px] rounded-lg bg-white">
+                <img
+                  src="../images/oppselve.png"
+                  alt="p55 gift"
+                  class="w-full rounded-lg"
+                />
+                <p class="text-sm p-2">itel P55+ 6.6″ HD + Punc…</p>
+                <footer class="flex items-center px-2 pb-2">
+                  <p>
+                    <span class="text-sm opacity-70">₦ 159,900</span>
+                    <br /><span class="font-semibold">50pts</span>
+                  </p>
+                  <button
+                    class="bg-[#1e39a6ff] text-white rounded-lg px-4 py-1 text-sm ml-2"
+                  >
+                    Reedem Gift
+                  </button>
+                </footer>
+              </div>
+              <div class="border-[1px] rounded-lg bg-white">
+                <img
+                  src="../images/ace.png"
+                  alt="p55 gift"
+                  class="w-full rounded-lg"
+                />
+                <p class="text-sm p-2">itel P55+ 6.6″ HD + Punc…</p>
+                <footer class="flex items-center px-2 pb-2">
+                  <p>
+                    <span class="text-sm opacity-70">₦ 159,900</span>
+                    <br /><span class="font-semibold">50pts</span>
+                  </p>
+                  <button
+                    class="bg-[#1e39a6ff] text-white rounded-lg px-4 py-1 text-sm ml-2"
+                  >
+                    Reedem Gift
+                  </button>
+                </footer>
+              </div>
+              <div class="border-[1px] rounded-lg bg-white">
+                <img
+                  src="../images/bm.png"
+                  alt="p55 gift"
+                  class="w-full rounded-lg"
+                />
+                <p class="text-sm p-2">itel P55+ 6.6″ HD + Punc…</p>
+                <footer class="flex items-center px-2 pb-2">
+                  <p>
+                    <span class="text-sm opacity-70">₦ 159,900</span>
+                    <br /><span class="font-semibold">50pts</span>
+                  </p>
+                  <button
+                    class="bg-[#1e39a6ff] text-white rounded-lg px-4 py-1 text-sm ml-2"
+                  >
+                    Reedem Gift
+                  </button>
+                </footer>
+              </div>
+              <div class="border-[1px] rounded-lg bg-white">
+                <img
+                  src="../images/Midea.png"
+                  alt="p55 gift"
+                  class="w-full rounded-lg"
+                />
+                <p class="text-sm p-2">itel P55+ 6.6″ HD + Punc…</p>
+                <footer class="flex items-center px-2 pb-2">
+                  <p>
+                    <span class="text-sm opacity-70">₦ 159,900</span>
+                    <br /><span class="font-semibold">50pts</span>
+                  </p>
+                  <button
+                    class="bg-[#1e39a6ff] text-white rounded-lg px-4 py-1 text-sm ml-2"
+                  >
+                    Reedem Gift
+                  </button>
+                </footer>
+              </div>
+              <div class="border-[1px] rounded-lg bg-white">
+                <img
+                  src="../images/skyrun.png"
+                  alt="p55 gift"
+                  class="w-full rounded-lg"
+                />
+                <p class="text-sm p-2">itel P55+ 6.6″ HD + Punc…</p>
+                <footer class="flex items-center px-2 pb-2">
+                  <p>
+                    <span class="text-sm opacity-70">₦ 159,900</span>
+                    <br /><span class="font-semibold">50pts</span>
+                  </p>
+                  <button
+                    class="bg-[#1e39a6ff] text-white rounded-lg px-4 py-1 text-sm ml-2"
+                  >
+                    Reedem Gift
+                  </button>
+                </footer>
+              </div>
+            </div>
+          </div>
+
+          <!-- My orders -->
+          <div class="w-[500px] bg-white p-4 h-fit hidden md:block">
+            <!-- Each order container -->
+            <div
+              class="flex items-center justify-between border-2 rounded-lg p-3 mt-3"
+            >
+              <img src="../images/small-p-55.png" alt="p55" />
+              <div>
+                <p class="font-semibold mb-2">itel P55+ 6.6″ HD + Punc…</p>
+                <span class="text-sm">Order 1549129846</span
+                ><span
+                  class="text-xs ml-2 bg-[#008000] text-white rounded-md px-2 py-1"
+                  >DELIVERED</span
+                >
+                <p class="font-semibold mt-2">On 24-06-2023</p>
+              </div>
+              <button
+                class="text-[#1e39a6ff] font-semibold bg-[#d2d6fa] py-1 px-3 rounded-md"
+              >
+                See Details
+              </button>
+            </div>
+            <div
+              class="flex items-center justify-between border-2 rounded-lg p-3 mt-3"
+            >
+              <img src="../images/small-p-55.png" alt="p55" />
+              <div>
+                <p class="font-semibold mb-2">itel P55+ 6.6″ HD + Punc…</p>
+                <span class="text-sm">Order 1549129846</span
+                ><span
+                  class="text-xs ml-2 bg-[#008000] text-white rounded-md px-2 py-1"
+                  >DELIVERED</span
+                >
+                <p class="font-semibold mt-2">On 24-06-2023</p>
+              </div>
+              <button
+                class="text-[#1e39a6ff] font-semibold bg-[#d2d6fa] py-1 px-3 rounded-md"
+              >
+                See Details
+              </button>
+            </div>
+            <div
+              class="flex items-center justify-between border-2 rounded-lg p-3 mt-3"
+            >
+              <img src="../images/small-p-55.png" alt="p55" />
+              <div>
+                <p class="font-semibold mb-2">itel P55+ 6.6″ HD + Punc…</p>
+                <span class="text-sm">Order 1549129846</span
+                ><span
+                  class="text-xs ml-2 bg-[#008000] text-white rounded-md px-2 py-1"
+                  >DELIVERED</span
+                >
+                <p class="font-semibold mt-2">On 24-06-2023</p>
+              </div>
+              <button
+                class="text-[#1e39a6ff] font-semibold bg-[#d2d6fa] py-1 px-3 rounded-md"
+              >
+                See Details
+              </button>
+            </div>
+            <div
+              class="flex items-center justify-between border-2 rounded-lg p-3 mt-3"
+            >
+              <img src="../images/small-p-55.png" alt="p55" />
+              <div>
+                <p class="font-semibold mb-2">itel P55+ 6.6″ HD + Punc…</p>
+                <span class="text-sm">Order 1549129846</span
+                ><span
+                  class="text-xs ml-2 bg-[#008000] text-white rounded-md px-2 py-1"
+                  >DELIVERED</span
+                >
+                <p class="font-semibold mt-2">On 24-06-2023</p>
+              </div>
+              <button
+                class="text-[#1e39a6ff] font-semibold bg-[#d2d6fa] py-1 px-3 rounded-md"
+              >
+                See Details
+              </button>
+            </div>
+            <div
+              class="flex items-center justify-between border-2 rounded-lg p-3 mt-3"
+            >
+              <img src="../images/small-p-55.png" alt="p55" />
+              <div>
+                <p class="font-semibold mb-2">itel P55+ 6.6″ HD + Punc…</p>
+                <span class="text-sm">Order 1549129846</span
+                ><span
+                  class="text-xs ml-2 bg-[#008000] text-white rounded-md px-2 py-1"
+                  >DELIVERED</span
+                >
+                <p class="font-semibold mt-2">On 24-06-2023</p>
+              </div>
+              <button
+                class="text-[#1e39a6ff] font-semibold bg-[#d2d6fa] py-1 px-3 rounded-md"
+              >
+                See Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

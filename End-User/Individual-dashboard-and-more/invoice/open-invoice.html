@@ -1,0 +1,353 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3cac6e41e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using config file while using cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mac: "1450px",
+            xxl: "1300px",
+            tablet: "1150px",
+            xl: "1024px",
+            lgScreen: "950px",
+            lg: "820px",
+            md: "768px",
+            sm: "640px",
+            surfaceDuo: "540px",
+            iPhone: "420px",
+          },
+        },
+      };
+    </script>
+    <title>Invoice</title>
+  </head>
+  <body>
+    <main class="bg-[#f7f5f5ff]">
+      <!-- Dashboard Header -->
+      <header class="bg-white px-4 py-2 border-[1px]">
+        <section class="mx-auto items-center justify-between flex">
+          <a href=""
+            ><img
+              src="../images/Logo.png"
+              alt="Dashboard logo"
+              class="w-[100px] h-fit surfaceDuo:w-[150px]"
+          /></a>
+
+          <nav class="flex">
+            <ul class="space-x-[25px] surfaceDuo:space-x-12 xl:space-x-24 flex">
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-magnifying-glass opacity-50 text-xl"></i>
+                <span class="hidden lg:block">Search</span>
+              </li>
+              <li class="text-xl opacity-50 cursor-pointer">
+                <i class="fa-solid fa-bell"></i>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-regular fa-circle-question opacity-50 text-xl"></i
+                ><a href="" class="hidden lg:block">Help</a>
+              </li>
+              <li class="space-x-2 cursor-pointer flex">
+                <i class="fa-solid fa-gear opacity-50 text-xl"></i
+                ><span class="hidden lg:block">Settings</span>
+              </li>
+              <li class="space-x-2">
+                <span class="bg-[#1e39a6ff] text-white rounded-full p-[5px]"
+                  >DA</span
+                ><a href="" class="hidden lg:inline">David Adebola</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <section class="flex">
+        <!-- Sidebar -->
+        <aside
+          class="py-8 bg-white h-[95vh] flex flex-col justify-between lgScreen:w-[300px]"
+        >
+          <ul class="">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-solid fa-table-cells-large text-2xl"></i
+                ><span class="hidden lgScreen:inline">Dashboard</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-trailer text-lg"></i
+                ><span class="hidden lgScreen:inline">My Issues</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-regular fa-file-zipper text-2xl"></i
+                ><span class="hidden lgScreen:inline">Invoice</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-wallet text-xl"></i
+                ><span class="hidden lgScreen:inline">Payment history</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-2.5"
+                ><i class="fa-solid fa-user-plus text-lg"></i
+                ><span class="hidden lgScreen:inline">PAYE Management</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-globe text-xl"></i
+                ><span class="hidden lgScreen:inline">E-Service</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-4"
+                ><i class="fa-solid fa-network-wired text-lg"></i
+                ><span class="hidden lgScreen:inline">Profile</span></a
+              >
+            </li>
+          </ul>
+          <ul class="my-[6vh]">
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <a href="" class="flex items-center gap-3"
+                ><i class="fa-regular fa-circle-question text-lg"></i
+                ><span class="hidden lgScreen:inline">Help & Support</span></a
+              >
+            </li>
+            <li
+              class="hover:bg-[#d2d6faff] hover:text-[#1e39a6ff] hover:font-semibold px-4 py-2"
+            >
+              <button class="flex items-center gap-3">
+                <i class="fa-solid fa-right-from-bracket text-lg"></i
+                ><span class="hidden lgScreen:inline">Log Out</span>
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Body of the Dashboard -->
+        <div class="w-full px-4 lgScreen:w-4/5 mb-8 overflow-x-hidden">
+          <div class="flex justify-between items-center my-8">
+            <h2 class="text-xl font-semibold sm:text-3xl">Invoice</h2>
+            <button
+              class="bg-[#1e39a6ff] text-white px-2 py-1 rounded-md border-2 border-[#1e39a6ff] sm:px-4 sm:py-2"
+            >
+              Generate invoice
+            </button>
+          </div>
+
+          <hr />
+
+          <div class="w-full mt-6 overflow-x-auto">
+            <header class="flex gap-4 mb-4 surfaceDuo:gap-8">
+              <button class="px-2 surfaceDuo:text-lg">All Invoice</button>
+              <button
+                class="px-2 border-b-2 border-[#1e39a6ff] surfaceDuo:text-lg"
+              >
+                Open Invoice
+              </button>
+              <button class="px-2 surfaceDuo:text-lg">Paid Invoice</button>
+            </header>
+
+            <table
+              class="w-[1200px] mt-2 bg-[#fff] border-2 rounded-lg mac:w-full"
+            >
+              <thead>
+                <tr class="text-left opacity-70 border-b-2">
+                  <th class="p-4 w-[15%]">
+                    <span class="mx-2">Payer ID</span>
+                    <i class="fa-solid fa-arrow-down text-sm"></i>
+                  </th>
+                  <th class="text-center w-[10%]">Invoice Number</th>
+                  <th class="text-center w-[10%]">Description</th>
+                  <th class="text-center p-2 w-[5%]">Total Amount</th>
+                  <th class="text-center p-2 w-[5%]">Amount paid</th>
+                  <th class="text-center p-2 w-[15%]">
+                    Balance yet to be paid
+                  </th>
+                  <th class="text-center p-2 w-[10%]">Invoice date</th>
+                  <th class="text-center p-2 w-[10%]">Due date</th>
+                  <th class="text-center p-2 w-[5%]">Status</th>
+                  <th class="text-center p-2 w-[15%]"></th>
+                </tr>
+              </thead>
+
+              <tbody class="text-sm">
+                <tr class="text-center bg-[#f2f4f5ff]">
+                  <td class="p-5 text-left">52166565161</td>
+                  <td class="text-left">INV-5713114PQR</td>
+                  <td>Development levy</td>
+                  <td>N 10,000</td>
+                  <td>N 10,000</td>
+                  <td>N10,000</td>
+                  <td class="">08/03/2023</td>
+                  <td class="text-center">08/03/2023</td>
+                  <td class="">
+                    <span
+                      class="text-[#bd3c33] bg-[#fff3f2] px-2 py-1 font-semibold rounded-xl"
+                      >Due</span
+                    >
+                  </td>
+                  <td class="pr-4">
+                    <button
+                      class="border-[2px] text-[#1e39a6] font-semibold px-3 py-1 rounded-lg"
+                    >
+                      Query
+                    </button>
+                    <button
+                      class="bg-[#1e39a6] border-[2px] border-[#1e39a6] text-white px-3 ml-2 py-1 rounded-lg"
+                    >
+                      Pay
+                    </button>
+                  </td>
+                </tr>
+                <tr class="text-center bg-[#fff]">
+                  <td class="p-5 text-left">52166565161</td>
+                  <td class="text-left">INV-5713114PQR</td>
+                  <td>Development levy</td>
+                  <td>N 10,000</td>
+                  <td>N 10,000</td>
+                  <td>N10,000</td>
+                  <td class="">08/03/2023</td>
+                  <td class="text-center">08/03/2023</td>
+                  <td class="">
+                    <span
+                      class="text-[#bd3c33] bg-[#fff3f2] px-2 py-1 font-semibold rounded-xl"
+                      >Due</span
+                    >
+                  </td>
+                  <td class="pr-4">
+                    <button
+                      class="border-[2px] text-[#1e39a6] font-semibold px-3 py-1 rounded-lg"
+                    >
+                      Query
+                    </button>
+                    <button
+                      class="bg-[#1e39a6] border-[2px] border-[#1e39a6] text-white px-3 ml-2 py-1 rounded-lg"
+                    >
+                      Pay
+                    </button>
+                  </td>
+                </tr>
+                <tr class="text-center bg-[#f2f4f5ff]">
+                  <td class="p-5 text-left">52166565161</td>
+                  <td class="text-left">INV-5713114PQR</td>
+                  <td>Development levy</td>
+                  <td>N 10,000</td>
+                  <td>N 10,000</td>
+                  <td>N10,000</td>
+                  <td class="">08/03/2023</td>
+                  <td class="text-center">08/03/2023</td>
+                  <td class="">
+                    <span
+                      class="text-[#bd3c33] bg-[#fff3f2] px-2 py-1 font-semibold rounded-xl"
+                      >Due</span
+                    >
+                  </td>
+                  <td class="pr-4">
+                    <button
+                      class="border-[2px] text-[#1e39a6] font-semibold px-3 py-1 rounded-lg"
+                    >
+                      Query
+                    </button>
+                    <button
+                      class="bg-[#1e39a6] border-[2px] border-[#1e39a6] text-white px-3 ml-2 py-1 rounded-lg"
+                    >
+                      Pay
+                    </button>
+                  </td>
+                </tr>
+                <tr class="text-center bg-[#fff]">
+                  <td class="p-5 text-left">52166565161</td>
+                  <td class="text-left">INV-5713114PQR</td>
+                  <td>Development levy</td>
+                  <td>N 10,000</td>
+                  <td>N 10,000</td>
+                  <td>N10,000</td>
+                  <td class="">08/03/2023</td>
+                  <td class="text-center">08/03/2023</td>
+                  <td class="">
+                    <span
+                      class="text-[#bd3c33] bg-[#fff3f2] px-2 py-1 font-semibold rounded-xl"
+                      >Due</span
+                    >
+                  </td>
+                  <td class="pr-4">
+                    <button
+                      class="border-[2px] text-[#1e39a6] font-semibold px-3 py-1 rounded-lg"
+                    >
+                      Query
+                    </button>
+                    <button
+                      class="bg-[#1e39a6] border-[2px] border-[#1e39a6] text-white px-3 ml-2 py-1 rounded-lg"
+                    >
+                      Pay
+                    </button>
+                  </td>
+                </tr>
+                <tr class="text-center bg-[#f2f4f5ff]">
+                  <td class="p-5 text-left">52166565161</td>
+                  <td class="text-left">INV-5713114PQR</td>
+                  <td>Development levy</td>
+                  <td>N 10,000</td>
+                  <td>N 10,000</td>
+                  <td>N10,000</td>
+                  <td class="">08/03/2023</td>
+                  <td class="text-center">08/03/2023</td>
+                  <td class="">
+                    <span
+                      class="text-[#bd3c33] bg-[#fff3f2] px-2 py-1 font-semibold rounded-xl"
+                      >Due</span
+                    >
+                  </td>
+                  <td class="pr-4">
+                    <button
+                      class="border-[2px] text-[#1e39a6] font-semibold px-3 py-1 rounded-lg"
+                    >
+                      Query
+                    </button>
+                    <button
+                      class="bg-[#1e39a6] border-[2px] border-[#1e39a6] text-white px-3 ml-2 py-1 rounded-lg"
+                    >
+                      Pay
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="flex bg-white py-3 px-5 gap-4 w-[1200px] mac:w-full">
+              <button class="border-2 px-3 py-1 rounded-md">Previous</button>
+              <button class="border-2 px-3 py-1 rounded-md">Next</button>
+              <span class="ml-auto block">Page 1</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
